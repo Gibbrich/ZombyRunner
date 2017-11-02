@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ClearArea : MonoBehaviour
 {
-    public bool IsClearArea { get; set; }
+    [SerializeField]
     private float timeSinceLastTrigger = 0f;
     // Use this for initialization
     void Start()
@@ -15,7 +15,11 @@ public class ClearArea : MonoBehaviour
     void Update()
     {
         timeSinceLastTrigger += Time.deltaTime;
-        IsClearArea = timeSinceLastTrigger >= 1f;
+
+        if (!GameManager.Instance.Helicopter.IsCalled && timeSinceLastTrigger >= 1f && Time.realtimeSinceStartup >= 10f )
+        {
+            SendMessageUpwards("OnFindClearArea");
+        }
     }
 
     private void OnTriggerStay(Collider other)

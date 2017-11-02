@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] 
+    private AudioClip whatHappened;
+    private AudioSource innerVoice;
+    
     [SerializeField]
     private GameObject spawnPointsParent;
     
     [SerializeField]
     private bool respawn = false;
     private readonly bool lastToggle = false;
-
-    private ClearArea clearArea;
     
     // Use this for initialization
     void Start()
     {
-        clearArea = GetComponentInChildren<ClearArea>();
+        innerVoice = GetComponents<AudioSource>()[1];
+        innerVoice.clip = whatHappened;
+        innerVoice.Play();
     }
 
     // Update is called once per frame
@@ -30,15 +34,21 @@ public class Player : MonoBehaviour
         
         if (Input.GetButtonDown("CallHeli"))
         {
-            if (clearArea.IsClearArea)
-            {
-                GameManager.Instance.Helicopter.Call();                
-            }
-            else
-            {
-                print("Can't call helicopter. Must find clear area first.");
-            }
+//            if (clearArea.IsClearArea)
+//            {
+//                GameManager.Instance.Helicopter.Call();                
+//            }
+//            else
+//            {
+//                print("Can't call helicopter. Must find clear area first.");
+//            }
         }
+    }
+    
+    // called by broadcast by ClearArea
+    private void OnFindClearArea()
+    {
+        GameManager.Instance.Helicopter.Call();
     }
 
     private void Respawn()

@@ -7,13 +7,21 @@ public class Helicopter : MonoBehaviour
     [SerializeField] 
     private AudioClip callSound;
     private AudioSource audioSource;
-    
-    private bool isCalled = false;
-    
+
+    private new Rigidbody rigidbody;
+
+    public Helicopter()
+    {
+        IsCalled = false;
+    }
+
+    public bool IsCalled { get; set; }
+
     // Use this for initialization
     void Start()
     {
         audioSource = GetComponents<AudioSource>()[1];
+        rigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -23,12 +31,14 @@ public class Helicopter : MonoBehaviour
 
     public void Call()
     {
-        if (!isCalled)
+        if (!IsCalled)
         {
-        isCalled = true;
-        
-        audioSource.clip = callSound;
-        audioSource.Play();
+            IsCalled = true;
+
+            audioSource.clip = callSound;
+            audioSource.Play();
+
+            rigidbody.velocity = new Vector3(0, 0, 50f);
         }
     }
 }
