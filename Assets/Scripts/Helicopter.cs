@@ -23,9 +23,12 @@ public class Helicopter : MonoBehaviour
 
     public void Call()
     {
+        if (!isCalled)
+        {
         isCalled = true;
         
         audioSource.clip = callSound;
         audioSource.Play();
+        }
     }
 }

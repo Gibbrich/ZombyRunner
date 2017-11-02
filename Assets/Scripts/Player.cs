@@ -10,10 +10,13 @@ public class Player : MonoBehaviour
     [SerializeField]
     private bool respawn = false;
     private readonly bool lastToggle = false;
+
+    private ClearArea clearArea;
     
     // Use this for initialization
     void Start()
     {
+        clearArea = GetComponentInChildren<ClearArea>();
     }
 
     // Update is called once per frame
@@ -27,7 +30,14 @@ public class Player : MonoBehaviour
         
         if (Input.GetButtonDown("CallHeli"))
         {
-            FindObjectOfType<Helicopter>().Call();
+            if (clearArea.IsClearArea)
+            {
+                GameManager.Instance.Helicopter.Call();                
+            }
+            else
+            {
+                print("Can't call helicopter. Must find clear area first.");
+            }
         }
     }
 
