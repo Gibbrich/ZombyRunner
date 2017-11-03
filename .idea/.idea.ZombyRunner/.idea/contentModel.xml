@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Артур\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_ZombyRunner.-1360968589.00" t="ExcludeRecursive" />
-    <e p="D:\projects\Unity\ZombyRunner" t="IncludeRecursive">
+    <e p="C:\Users\Dvurechenskiyi\.Rider2017.2\system\resharper-host\local\Transient\ReSharperHost\v10\SolutionCaches\_ZombyRunner.734570209.00" t="ExcludeRecursive" />
+    <e p="D:\Unity\projects\ZombyRunner" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -14,14 +14,15 @@
             </e>
           </e>
         </e>
-        <e p="RadioSystem.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="ClearArea.cs" t="Include" />
           <e p="DayCycle.cs" t="Include" />
           <e p="Eyes.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Helicopter.cs" t="Include" />
+          <e p="InnerVoice.cs" t="Include" />
           <e p="Player.cs" t="Include" />
+          <e p="RadioSystem.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">
@@ -137,6 +138,26 @@
               <e p="Shaders" t="Include">
                 <e p="FXWaterBasic.shader" t="Include" />
               </e>
+            </e>
+          </e>
+          <e p="ParticleSystems" t="Include">
+            <e p="ParticleSystemsGuidelines.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="AfterburnerPhysicsForce.cs" t="Include" />
+              <e p="ExplosionFireAndDebris.cs" t="Include" />
+              <e p="ExplosionPhysicsForce.cs" t="Include" />
+              <e p="Explosive.cs" t="Include" />
+              <e p="ExtinguishableParticleSystem.cs" t="Include" />
+              <e p="FireLight.cs" t="Include" />
+              <e p="Hose.cs" t="Include" />
+              <e p="ParticleSystemMultiplier.cs" t="Include" />
+              <e p="SmokeParticles.cs" t="Include" />
+              <e p="WaterHoseParticles.cs" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="PriorityParticleAdd.shader" t="Include" />
+              <e p="PriorityParticleAddSoft.shader" t="Include" />
+              <e p="PriorityParticleAlpha.shader" t="Include" />
             </e>
           </e>
           <e p="Utility" t="Include">

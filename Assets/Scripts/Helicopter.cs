@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class Helicopter : MonoBehaviour
 {
-    [SerializeField] 
-    private AudioClip callSound;
-    private AudioSource audioSource;
-
     private new Rigidbody rigidbody;
 
     public Helicopter()
@@ -20,7 +16,6 @@ public class Helicopter : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        audioSource = GetComponents<AudioSource>()[1];
         rigidbody = GetComponent<Rigidbody>();
     }
 
@@ -29,15 +24,11 @@ public class Helicopter : MonoBehaviour
     {
     }
 
-    public void Call()
+    public void OnDispatchHelicopter()
     {
         if (!IsCalled)
         {
             IsCalled = true;
-
-            audioSource.clip = callSound;
-            audioSource.Play();
-
             rigidbody.velocity = new Vector3(0, 0, 50f);
         }
     }
