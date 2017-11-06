@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: b781c04379682cb4c938bae0f21b8ec6
+timeCreated: 1509967606
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Digital Dismay
+  fontNames:
+  - Digital Dismay
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

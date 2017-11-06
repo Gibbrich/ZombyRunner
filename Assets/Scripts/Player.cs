@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
-{    
+{
+    [SerializeField]
+    private float health = 100;
+    
     [SerializeField]
     private GameObject spawnPointsParent;
 
@@ -15,7 +18,13 @@ public class Player : MonoBehaviour
     [SerializeField]
     private bool respawn = false;
     private readonly bool lastRespawnToggle = false;
-    
+
+    public float Health
+    {
+        get { return health; }
+        private set { health = value; }
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -55,5 +64,11 @@ public class Player : MonoBehaviour
     private void DropFlare()
     {
         Instantiate(flare, flarePosition, Quaternion.identity);
+    }
+
+    public void TakeDamage(float damage)
+    {
+        Health -= damage;
+        GameManager.Instance.HealthDisplay.UpdateHealthDisplay(Health);
     }
 }

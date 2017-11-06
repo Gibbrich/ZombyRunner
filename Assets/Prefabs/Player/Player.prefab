@@ -495,6 +495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e0d7fa288ee3c04b8446276fa136c83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   spawnPointsParent: {fileID: 1983753698285454, guid: f82bd1a077ef85149a3b6652645ad781,
     type: 2}
   flare: {fileID: 1748288653693774, guid: e35bd9284c664734e89336e5fca0ab97, type: 2}
