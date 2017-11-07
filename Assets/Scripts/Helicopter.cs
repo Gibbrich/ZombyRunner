@@ -5,13 +5,7 @@ using UnityEngine;
 public class Helicopter : MonoBehaviour
 {
     private new Rigidbody rigidbody;
-
-    public Helicopter()
-    {
-        IsCalled = false;
-    }
-
-    public bool IsCalled { get; set; }
+    private State currentState;
 
     // Use this for initialization
     void Start()
@@ -19,17 +13,54 @@ public class Helicopter : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void OnDispatchHelicopter()
     {
-        if (!IsCalled)
+        if (currentState == State.AWAIT)
         {
-            IsCalled = true;
-            rigidbody.velocity = new Vector3(0, 0, 50f);
+            currentState = State.IN_TRANSIT;
+            
+            transform.LookAt(GameManager.Instance.Player.Flare.transform);
+            Vector3 rotationEulerAngles = transform.rotation.eulerAngles;
+            rotationEulerAngles.x = 0;
+            rotationEulerAngles.z = 0;
+            transform.rotation = Quaternion.Euler(rotationEulerAngles);
+
+            rigidbody.velocity = transform.forward * 50;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (currentState == State.IN_TRANSIT && other.GetComponent<ClearArea>())
+        {
+            currentState = State.LANDING;
+            rigidbody.velocity = new Vector3(0, -30, 0);
+        }
+
+        if (currentState == State.LANDING && other.GetComponent<Terrain>())
+        {
+            currentState = State.LANDED;
+            rigidbody.velocity = Vector3.zero;
+        }
+
+        if (currentState == State.LANDED && other.GetComponent<Player>())
+        {
+            currentState = State.EVACUATING;
+            /* todo    - move helicopter
+             * @author - Артур
+             * @date   - 07.11.2017
+             * @time   - 16:54
+            */   
+            GameManager.Instance.UIManager.PlayerRescued();
+        }
+    }
+
+    private enum State
+    {
+        AWAIT,
+        IN_TRANSIT,
+        LANDING,
+        LANDED,
+        EVACUATING
     }
 }

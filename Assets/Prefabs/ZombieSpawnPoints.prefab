@@ -1860,7 +1860,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114354770969414704
@@ -1876,7 +1877,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114373595938754060
@@ -1892,7 +1894,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114427176324306404
@@ -1908,7 +1911,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114539285632934908
@@ -1924,7 +1928,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114684913054613362
@@ -1940,7 +1945,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114701049164763994
@@ -1956,7 +1962,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114748604252804920
@@ -1972,7 +1979,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114764376196892228
@@ -1988,7 +1996,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114768982949490012
@@ -2004,7 +2013,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114776035394340060
@@ -2020,7 +2030,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114832891919515534
@@ -2036,7 +2047,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114903589775772634
@@ -2052,7 +2064,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114948396619642326
@@ -2068,7 +2081,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114957892767339446
@@ -2084,7 +2098,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15
 --- !u!114 &114975313116624352
@@ -2100,6 +2115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   zombiePrefab: {fileID: 1539232137399044, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
     type: 2}
-  zombieParent: {fileID: 0}
+  zombieParent: {fileID: 1860910047671514, guid: 5320403cf237e1f4a9b4e2dbf286a0a0,
+    type: 2}
   spawnThresholdMin: 10
   spawnThresholdMax: 15

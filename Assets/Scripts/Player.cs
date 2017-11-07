@@ -11,7 +11,9 @@ public class Player : MonoBehaviour
     private GameObject spawnPointsParent;
 
     [SerializeField]
-    private GameObject flare;
+    private GameObject flarePrefab;
+
+    public GameObject Flare { get; private set; }
 
     private Vector3 flarePosition;
     
@@ -63,7 +65,7 @@ public class Player : MonoBehaviour
 
     private void DropFlare()
     {
-        Instantiate(flare, flarePosition, Quaternion.identity);
+        Flare = Instantiate(flarePrefab, flarePosition, Quaternion.identity);
     }
 
     public void TakeDamage(float damage)

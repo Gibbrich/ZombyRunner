@@ -7,6 +7,7 @@ public class UIManager : MonoBehaviour
 {
     private static readonly string PLAYER_ATTACKED_TRIGGER = "playerAttacked";
     private static readonly string PLAYER_DEAD_TRIGGER = "playerDied";
+    private static readonly string PLAYER_RESCUED_TRIGGER = "playerRescued";
 
     private HealthDisplay healthDisplay;
     private Animator animator;
@@ -34,5 +35,10 @@ public class UIManager : MonoBehaviour
     public void LoadLevel(string levelName)
     {
         LevelManager.Instance.LoadLevel(levelName);
+    }
+
+    public void PlayerRescued()
+    {
+        animator.SetTrigger(PLAYER_RESCUED_TRIGGER);
     }
 }

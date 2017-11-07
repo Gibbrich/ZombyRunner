@@ -23,9 +23,9 @@ GameObject:
   - component: {fileID: 23414310649055428}
   - component: {fileID: 95625386275331170}
   - component: {fileID: 82748499104353654}
-  - component: {fileID: 82652319361309142}
   - component: {fileID: 114697776403075076}
   - component: {fileID: 54542091033310182}
+  - component: {fileID: 65839389354870210}
   m_Layer: 0
   m_Name: Helicopter
   m_TagString: Untagged
@@ -73,8 +73,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1444476813703136}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.0613275, y: 300.5, z: -8998.383}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.0613275, y: 290.5, z: -1000}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children:
   - {fileID: 4632938309228052}
@@ -94,7 +94,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4032339058004452}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.0000014707496, z: 0}
 --- !u!4 &4632938309228052
 Transform:
   m_ObjectHideFlags: 1
@@ -107,7 +107,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4032339058004452}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.0000019201455, y: 0, z: 0}
 --- !u!23 &23263923120800960
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -235,91 +235,23 @@ Rigidbody:
   m_Mass: 1
   m_Drag: 0
   m_AngularDrag: 0.05
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!82 &82652319361309142
-AudioSource:
+--- !u!65 &65839389354870210
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1444476813703136}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
   m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 43799e283b19faf4a807a0425c54f2db, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    - serializedVersion: 2
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 2
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 0
+  serializedVersion: 2
+  m_Size: {x: 500, y: 450, z: 1299.1978}
+  m_Center: {x: 0, y: 160.84352, z: -260.59393}
 --- !u!82 &82748499104353654
 AudioSource:
   m_ObjectHideFlags: 1
@@ -428,4 +360,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 92ae0449a472a214bb2401d83fe717a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  callSound: {fileID: 8300000, guid: 43799e283b19faf4a807a0425c54f2db, type: 3}

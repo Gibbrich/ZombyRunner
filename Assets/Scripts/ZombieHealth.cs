@@ -15,11 +15,14 @@ public class ZombieHealth : MonoBehaviour
     private AudioClip deathSFX;
 
     private AudioSource audioSource;
+    private ParticleSystem hitParticles;
     // Use this for initialization
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = hurtSFX;
+
+        hitParticles = GetComponentInChildren<ParticleSystem>();
     }
 
     // Update is called once per frame
@@ -27,9 +30,12 @@ public class ZombieHealth : MonoBehaviour
     {
     }
 
-    public void TakeDamage(float damage, Vector3 shootHitPoint)
+    public void TakeDamage(float damage, Vector3 shotPosition)
     {
         health -= damage;
+
+        hitParticles.transform.position = shotPosition;
+        hitParticles.Play();
 
         if (health > 0)
         {
