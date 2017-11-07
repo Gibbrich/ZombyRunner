@@ -2,16 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f9e4822-c51b-4506-8264-7b8700f54491" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Roger-that.mp3" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Textures/BloodSprayNormals.tif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/WeaponEffects/Textures/BloodSprayAlbedo.tif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Roger-that.mp3.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Materials.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Materials/BloodSplatParticle.mat" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Materials/BloodSplatParticle.mat.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Prefabs.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Prefabs/BloodSprayEffect.prefab" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Prefabs/BloodSprayEffect.prefab.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Textures.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Textures/BloodSprayNormals.tif.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/WeaponEffects.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/WeaponEffects/Textures.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/BloodParticles/WeaponEffects/Textures/BloodSprayAlbedo.tif.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Textures.meta" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies.prefab" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombies.prefab.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/SFX.meta" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/SFX/Roger-that.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Assets/SFX/Roger-that.mp3.meta" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/Helicopter.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/Helicopter.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/LandingArea.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/LandingArea.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.controller" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.controller" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/Zombie.prefab" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/ZombieSpawnPoints.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/ZombieSpawnPoints.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/ZombieHealth.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/ZombieHealth.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,11 +40,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ZombieHealth.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ZombieHealth.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieHealth.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
+            <state relative-caret-position="452">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
               <folding>
                 <marker date="1510066524051" expanded="true" signature="6:128" ph="..." />
                 <marker date="1510066524051" expanded="true" signature="171:1612" ph="{...}" />
@@ -45,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ZombieSpawner.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ZombieSpawner.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="652">
+              <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
               <folding>
                 <marker date="1510051119964" expanded="false" signature="6:128" ph="..." />
                 <marker date="1510051119964" expanded="true" signature="172:1206" ph="{...}" />
@@ -148,6 +165,7 @@
     <setting file="file://$PROJECT_DIR$/../Survival Shooter/Assets/Scripts/Player/PlayerShooting.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ZombieAggro.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ZombieAttack.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/ea/d2e5153f/Transform.cs" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerShooting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ZombieHealth.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/f5/67680b6b/AudioSource.cs" root0="SKIP_INSPECTION" />
@@ -222,7 +240,7 @@
           <expand>
             <path>
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="ZombyRunner (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="ZombyRunner (3 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
           </expand>
           <select />
@@ -289,7 +307,7 @@
       <workItem from="1509699083492" duration="1910000" />
       <workItem from="1509963155909" duration="11413000" />
       <workItem from="1510050148977" duration="117000" />
-      <workItem from="1510050275017" duration="15624000" />
+      <workItem from="1510050275017" duration="18228000" />
     </task>
     <task id="LOCAL-00001" summary="Added helicopter and some sfx">
       <created>1509546246744</created>
@@ -326,11 +344,25 @@
       <option name="project" value="LOCAL" />
       <updated>1510058669960</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added player rescuing, helicopter rescue behaviour">
+      <created>1510067519951</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1510067519951</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added player rescuing, helicopter rescue behaviour">
+      <created>1510067681605</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1510067681605</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54099000" />
+    <option name="totallyTimeSpent" value="56703000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -348,7 +380,7 @@
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26086956" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -405,7 +437,8 @@
     <MESSAGE value="Refactoring and added landing area" />
     <MESSAGE value="Added ability to shoot, zombie spawn points, player/zombie health and SFX" />
     <MESSAGE value="Added zombie spawn, die/hurt animation, start scene" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added zombie spawn, die/hurt animation, start scene" />
+    <MESSAGE value="Added player rescuing, helicopter rescue behaviour" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added player rescuing, helicopter rescue behaviour" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -442,7 +475,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/RadioSystem.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DayCycle.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
@@ -802,26 +834,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieHealth.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="37" column="26" lean-forward="false" selection-start-line="37" selection-start-column="26" selection-end-line="37" selection-end-column="26" />
-          <folding>
-            <marker date="1510066524051" expanded="true" signature="6:128" ph="..." />
-            <marker date="1510066524051" expanded="true" signature="171:1612" ph="{...}" />
-            <marker date="1510066524051" expanded="true" signature="464:629" ph="{...}" />
-            <marker date="1510066524051" expanded="true" signature="687:699" ph="{...}" />
-            <marker date="1510066524051" expanded="true" signature="763:1028" ph="{...}" />
-            <marker date="1510066524051" expanded="true" signature="906:970" ph="{...}" />
-            <marker date="1510066524051" expanded="true" signature="983:1022" ph="{...}" />
-            <marker date="1510066524051" expanded="true" signature="1052:1467" ph="{...}" />
-            <marker date="1510066524051" expanded="true" signature="1136:1302" ph="/* todo    - Now just stop zombie running. Change for death animation ... */" />
-            <marker date="1510066524051" expanded="true" signature="1507:1610" ph="{...}" />
-            <marker date="1510066524051" expanded="true" signature="1549:1604" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieAggro.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="380">
@@ -836,10 +848,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DE713E92-6A1C-489D-A969-4BB7F33085F3/ea/d2e5153f/Transform.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="261" column="26" lean-forward="true" selection-start-line="261" selection-start-column="26" selection-end-line="261" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="652">
+          <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
             <marker date="1510051119964" expanded="false" signature="6:128" ph="..." />
             <marker date="1510051119964" expanded="true" signature="172:1206" ph="{...}" />
@@ -847,6 +867,26 @@
             <marker date="1510051119964" expanded="true" signature="631:859" ph="{...}" />
             <marker date="1510051119964" expanded="true" signature="693:853" ph="{...}" />
             <marker date="1510051119964" expanded="true" signature="885:1204" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieHealth.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <marker date="1510066524051" expanded="true" signature="6:128" ph="..." />
+            <marker date="1510066524051" expanded="true" signature="171:1612" ph="{...}" />
+            <marker date="1510066524051" expanded="true" signature="464:629" ph="{...}" />
+            <marker date="1510066524051" expanded="true" signature="687:699" ph="{...}" />
+            <marker date="1510066524051" expanded="true" signature="763:1028" ph="{...}" />
+            <marker date="1510066524051" expanded="true" signature="906:970" ph="{...}" />
+            <marker date="1510066524051" expanded="true" signature="983:1022" ph="{...}" />
+            <marker date="1510066524051" expanded="true" signature="1052:1467" ph="{...}" />
+            <marker date="1510066524051" expanded="true" signature="1136:1302" ph="/* todo    - Now just stop zombie running. Change for death animation ... */" />
+            <marker date="1510066524051" expanded="true" signature="1507:1610" ph="{...}" />
+            <marker date="1510066524051" expanded="true" signature="1549:1604" ph="{...}" />
           </folding>
         </state>
       </provider>
