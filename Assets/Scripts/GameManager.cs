@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
@@ -19,5 +20,10 @@ public class GameManager : Singleton<GameManager>
         Helicopter = FindObjectOfType<Helicopter>();
         HealthDisplay = FindObjectOfType<HealthDisplay>();
         UIManager = FindObjectOfType<UIManager>();
+    }
+
+    public void LoadLevel(string levelName)
+    {
+        SceneManager.LoadScene(levelName);
     }
 }

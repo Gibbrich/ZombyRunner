@@ -17,19 +17,20 @@
         <e p="Scripts" t="Include">
           <e p="ClearArea.cs" t="Include" />
           <e p="DayCycle.cs" t="Include" />
-          <e p="EnemyAttack.cs" t="Include" />
-          <e p="EnemyHealth.cs" t="Include" />
           <e p="Eyes.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="HealthDisplay.cs" t="Include" />
           <e p="Helicopter.cs" t="Include" />
           <e p="InnerVoice.cs" t="Include" />
+          <e p="LevelManager.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="PlayerShooting.cs" t="Include" />
           <e p="RadioSystem.cs" t="Include" />
           <e p="Singleton.cs" t="Include" />
           <e p="UIManager.cs" t="Include" />
           <e p="ZombieAggro.cs" t="Include" />
+          <e p="ZombieAttack.cs" t="Include" />
+          <e p="ZombieHealth.cs" t="Include" />
           <e p="ZombieSpawner.cs" t="Include" />
         </e>
         <e p="Standard Assets" t="Include">

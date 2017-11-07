@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.Characters.ThirdPerson;
 
-public class EnemyHealth : MonoBehaviour
+public class ZombieHealth : MonoBehaviour
 {
     [SerializeField]
     private float health = 100;
@@ -32,10 +33,7 @@ public class EnemyHealth : MonoBehaviour
 
         if (health > 0)
         {
-            if (!audioSource.isPlaying)
-            {
-                audioSource.Play();   
-            }            
+            PlayAudioSingleTime();         
         }
         else
         {
@@ -46,8 +44,24 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         audioSource.clip = deathSFX;
-        audioSource.Play();
-        
+        PlayAudioSingleTime();
+
+        /* todo    - Now just stop zombie running. Change for death animation
+         * @author - Артур
+         * @date   - 07.11.2017
+         * @time   - 13:49
+        */        
+        AICharacterControl control = GetComponent<AICharacterControl>();
+        control.target = null;
+
         Destroy(gameObject, deathSFX.length);
+    }
+
+    private void PlayAudioSingleTime()
+    {
+        if (!audioSource.isPlaying)
+        {
+            audioSource.Play();   
+        }
     }
 }

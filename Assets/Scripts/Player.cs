@@ -69,6 +69,16 @@ public class Player : MonoBehaviour
     public void TakeDamage(float damage)
     {
         Health -= damage;
-        GameManager.Instance.HealthDisplay.UpdateHealthDisplay(Health);
+
+        if (Health <= 0)
+        {
+            // play charachter die sound
+            GameManager.Instance.UIManager.PlayerDied();
+        }
+        else
+        {
+            // play character hurt sound
+            GameManager.Instance.UIManager.UpdateHealthDisplay(Health);
+        }
     }
 }

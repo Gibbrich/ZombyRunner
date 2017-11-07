@@ -15,11 +15,6 @@ public class HealthDisplay : MonoBehaviour
         text.text = GameManager.Instance.Player.Health.ToString(CultureInfo.CurrentCulture);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
     public void UpdateHealthDisplay(float value)
     {
         text.text = value.ToString(CultureInfo.CurrentCulture);

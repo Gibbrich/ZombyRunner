@@ -62,10 +62,10 @@ public class PlayerShooting : MonoBehaviour
 
         if (Physics.Raycast(shootRay, out shootHit, range, shootableMask))
         {
-            EnemyHealth enemyHealth = shootHit.collider.GetComponent<EnemyHealth>();
-            if (enemyHealth != null)
+            ZombieHealth zombieHealth = shootHit.collider.GetComponent<ZombieHealth>();
+            if (zombieHealth != null)
             {
-                enemyHealth.TakeDamage(damagePerShot, shootHit.point);
+                zombieHealth.TakeDamage(damagePerShot, shootHit.point);
             }
         }
     }

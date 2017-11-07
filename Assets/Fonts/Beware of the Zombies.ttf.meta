@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: c43e90fd9af0d5244b0e00eb726f66c7
+timeCreated: 1510053250
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Beware of the Zombies
+  fontNames:
+  - Beware of the Zombies
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
