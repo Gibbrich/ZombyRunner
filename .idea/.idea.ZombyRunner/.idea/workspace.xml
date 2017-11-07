@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f9e4822-c51b-4506-8264-7b8700f54491" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CallHeloTip.anim" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/CallHeloTip.anim.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Texture/helicopter_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Texture/zombie_icon.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Texture/helicopter_icon.png.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Texture/zombie_icon.png.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.controller" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.controller" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/ClearArea.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/ClearArea.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/RadioSystem.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/RadioSystem.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -304,7 +299,7 @@
       <workItem from="1509699083492" duration="1910000" />
       <workItem from="1509963155909" duration="11413000" />
       <workItem from="1510050148977" duration="117000" />
-      <workItem from="1510050275017" duration="22979000" />
+      <workItem from="1510050275017" duration="24419000" />
     </task>
     <task id="LOCAL-00001" summary="Added helicopter and some sfx">
       <created>1509546246744</created>
@@ -362,11 +357,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510070142809</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Refactored communication system">
+      <created>1510076107727</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1510076107727</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61454000" />
+    <option name="totallyTimeSpent" value="62894000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -444,7 +446,8 @@
     <MESSAGE value="Added zombie spawn, die/hurt animation, start scene" />
     <MESSAGE value="Added player rescuing, helicopter rescue behaviour" />
     <MESSAGE value="Added zombie hit blood effect" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added zombie hit blood effect" />
+    <MESSAGE value="Refactored communication system" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored communication system" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
