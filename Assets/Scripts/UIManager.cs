@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     private static readonly string PLAYER_ATTACKED_TRIGGER = "playerAttacked";
     private static readonly string PLAYER_DEAD_TRIGGER = "playerDied";
     private static readonly string PLAYER_RESCUED_TRIGGER = "playerRescued";
+    private static readonly string IS_CALL_HELO_AVAILABLE = "isCallHeloAvailable";
 
     private HealthDisplay healthDisplay;
     private Animator animator;
@@ -17,6 +18,8 @@ public class UIManager : MonoBehaviour
     {
         healthDisplay = GetComponentInChildren<HealthDisplay>();
         animator = GetComponent<Animator>();
+        
+        
     }
     
     public void UpdateHealthDisplay(float value)
@@ -40,5 +43,10 @@ public class UIManager : MonoBehaviour
     public void PlayerRescued()
     {
         animator.SetTrigger(PLAYER_RESCUED_TRIGGER);
+    }
+
+    public void ClearAreaStateChanged(bool isAreaClear)
+    {
+        animator.SetBool(IS_CALL_HELO_AVAILABLE, isAreaClear);
     }
 }

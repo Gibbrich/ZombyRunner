@@ -13,7 +13,7 @@ public class Helicopter : MonoBehaviour
         rigidbody = GetComponent<Rigidbody>();
     }
 
-    public void OnDispatchHelicopter()
+    public void CallHelicopter()
     {
         if (currentState == State.AWAIT)
         {

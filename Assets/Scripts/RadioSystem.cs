@@ -18,24 +18,19 @@ public class RadioSystem : MonoBehaviour
         audioSource = GetComponent<AudioSource>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
-
-    private void OnMakeInitialHeliCall()
+    public void CallHelicopter()
     {
         audioSource.clip = initialHeliCall;
         audioSource.Play();
         
-        Invoke("ReplyInitialCall", initialHeliCall.length + 1f);
+        Invoke("ReplyHelicopter", initialHeliCall.length + 1f);
     }
 
-    private void ReplyInitialCall()
+    private void ReplyHelicopter()
     {
         audioSource.clip = heliCallReply;
         audioSource.Play();
         
-        BroadcastMessage("OnDispatchHelicopter");
+        GameManager.Instance.Helicopter.CallHelicopter();
     }
 }

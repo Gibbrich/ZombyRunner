@@ -10,26 +10,29 @@ public class InnerVoice : MonoBehaviour
     private AudioClip goodLandingArea;
 
     private AudioSource audioSource;
+
+    private RadioSystem radioSystem;
     
     // Use this for initialization
     void Start()
     {
+        radioSystem = FindObjectOfType<RadioSystem>();
+        
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = whatHappened;
         audioSource.Play();
     }
 
-    // called by broadcast by ClearArea
-    private void OnFindClearArea()
+    public void FindClearArea()
     {
         audioSource.clip = goodLandingArea;
         audioSource.Play();
         
-        Invoke("CallHeli", goodLandingArea.length + 1f);
+        Invoke("CallHelicopter", goodLandingArea.length + 1);
     }
 
-    private void CallHeli()
+    private void CallHelicopter()
     {
-        SendMessageUpwards("OnMakeInitialHeliCall");
+        radioSystem.CallHelicopter();
     }
 }
