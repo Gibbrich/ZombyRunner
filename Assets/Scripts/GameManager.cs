@@ -12,7 +12,19 @@ public class GameManager : Singleton<GameManager>
     public HealthDisplay HealthDisplay { get; private set; }
 
     public UIManager UIManager { get; private set; }
-    
+
+    private int zombieCount;
+    public int ZombieCount
+    {
+        get { return zombieCount; }
+
+        set
+        {
+            zombieCount = value;
+            UIManager.UpdateZombieKillCountDisplay();
+        }
+    }
+
     // Use this for initialization
     void Start()
     {

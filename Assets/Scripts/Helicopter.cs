@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Helicopter : MonoBehaviour
 {
+    [SerializeField]
+    private float arrivalTime = 300;
+    
     private new Rigidbody rigidbody;
     private State currentState;
 
@@ -37,7 +40,7 @@ public class Helicopter : MonoBehaviour
             rigidbody.velocity = new Vector3(0, -30, 0);
         }
 
-        if (currentState == State.LANDING && other.GetComponent<Terrain>())
+        if (currentState == State.LANDING && other.name.Equals("Flare"))
         {
             currentState = State.LANDED;
             rigidbody.velocity = Vector3.zero;

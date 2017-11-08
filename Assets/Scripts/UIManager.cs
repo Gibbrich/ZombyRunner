@@ -18,8 +18,6 @@ public class UIManager : MonoBehaviour
     {
         healthDisplay = GetComponentInChildren<HealthDisplay>();
         animator = GetComponent<Animator>();
-        
-        
     }
     
     public void UpdateHealthDisplay(float value)
@@ -48,5 +46,15 @@ public class UIManager : MonoBehaviour
     public void ClearAreaStateChanged(bool isAreaClear)
     {
         animator.SetBool(IS_CALL_HELO_AVAILABLE, isAreaClear);
+    }
+
+    public void StartHelicopterArriveCountdown()
+    {
+        GetComponentInChildren<Countdown>().StartCountdown();
+    }
+
+    public void UpdateZombieKillCountDisplay()
+    {
+        GetComponentInChildren<ZombieCount>().UpdateCount();
     }
 }

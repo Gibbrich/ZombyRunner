@@ -16,6 +16,8 @@ public class ZombieHealth : MonoBehaviour
 
     private AudioSource audioSource;
     private ParticleSystem hitParticles;
+
+    private bool isDead = false;
     // Use this for initialization
     void Start()
     {
@@ -32,23 +34,28 @@ public class ZombieHealth : MonoBehaviour
 
     public void TakeDamage(float damage, Vector3 shotPosition)
     {
-        health -= damage;
-
-        hitParticles.transform.position = shotPosition;
-        hitParticles.Play();
-
-        if (health > 0)
+        if (!isDead)
         {
-            PlayAudioSingleTime();         
-        }
-        else
-        {
-            Die();
+            health -= damage;
+
+            hitParticles.transform.position = shotPosition;
+            hitParticles.Play();
+
+            if (health > 0)
+            {
+                PlayAudioSingleTime();         
+            }
+            else
+            {
+                Die();
+            }
         }
     }
 
     private void Die()
     {
+        isDead = true;
+        
         audioSource.clip = deathSFX;
         PlayAudioSingleTime();
 
@@ -60,6 +67,13 @@ public class ZombieHealth : MonoBehaviour
         AICharacterControl control = GetComponent<AICharacterControl>();
         control.target = null;
 
+        /* todo    - use particle system for destroying zombie if cant use zombie model
+         * @author - Dvurechenskiyi
+         * @date   - 08.11.2017
+         * @time   - 16:58
+        */
+        GameManager.Instance.ZombieCount++;
+        
         Destroy(gameObject, deathSFX.length);
     }
 

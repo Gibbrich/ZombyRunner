@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4447308, g: 0.48832202, b: 0.54147685, a: 1}
+  m_IndirectSpecularColor: {r: 0.4447308, g: 0.48832172, b: 0.54147696, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1003,6 +1003,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 861394400}
+--- !u!4 &868860807 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4263099671063774, guid: 6101994970f0609418348c6cc26d2d0e,
+    type: 2}
+  m_PrefabInternal: {fileID: 621148333}
 --- !u!1 &883426586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1127,6 +1132,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1200199717}
+  - component: {fileID: 1200199718}
   m_Layer: 5
   m_Name: HelicopterCount
   m_TagString: Untagged
@@ -1151,9 +1157,21 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -54.46, y: 0}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 1, y: 1}
+--- !u!114 &1200199718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1200199716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d708b16cede14941a4f239a5f30f360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdownTime: 20
 --- !u!1 &1384526705
 GameObject:
   m_ObjectHideFlags: 0
@@ -1378,6 +1396,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1615331290}
+  - component: {fileID: 1615331291}
   m_Layer: 5
   m_Name: ZombieCount
   m_TagString: Untagged
@@ -1405,6 +1424,17 @@ RectTransform:
   m_AnchoredPosition: {x: 258, y: 0}
   m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &1615331291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1615331289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 726129b0874575f4dba61f646b4a5e53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1676542484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1543,6 +1573,11 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114365559600561288, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 868860807}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45beca6cc2ed50a4b88bc75faa5dc6ae, type: 2}
   m_IsPrefabParent: 0
@@ -1955,20 +1990,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -1994,7 +2015,7 @@ LensFlare:
   m_GameObject: {fileID: 1910841258}
   m_Enabled: 1
   m_Flare: {fileID: 12100000, guid: 54fbbf098d116effa00081aba8ad6659, type: 2}
-  m_Color: {r: 1, g: 1, b: 0, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_Brightness: 1.5
   m_FadeSpeed: 3
   m_IgnoreLayers:
