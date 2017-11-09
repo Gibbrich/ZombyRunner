@@ -2,243 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f9e4822-c51b-4506-8264-7b8700f54491" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/DustPuffSmallParticleSheet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreakAlbedo.tif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreakNormals.tif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleAlbedo.tif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleHeight.tif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleNormals.tif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/DecalDestroyer.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/DecalDestroyer.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ExtinguishableFire.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ExtinguishableFire.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/GunAim.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/GunAim.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/GunShoot.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/GunShoot.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleCollision.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleCollision.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleExamples.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleExamples.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleMenu.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Scripts/ParticleMenu.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/Shared/Textures/DustPuffSmallParticleSheet.png.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/BulletFleshDecal.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Materials/BulletFleshDecal.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactFleshBigEffect.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Prefabs/BulletImpactFleshBigEffect.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodMist.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodMist.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodSplat2.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodSplat2.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreak.mat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreak.mat.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreakAlbedo.tif.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/BloodStreakNormals.tif.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleAlbedo.tif.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleHeight.tif.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/EffectExamples/WeaponEffects/Textures/FleshBulletHoleNormals.tif.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Attributes.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Attributes/PostProcessingModelEditorAttribute.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Attributes/PostProcessingModelEditorAttribute.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/AmbientOcclusionModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/AmbientOcclusionModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/AntialiasingModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/AntialiasingModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/BloomModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/BloomModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/BuiltinDebugViewsEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/BuiltinDebugViewsEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ChromaticAberrationEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ChromaticAberrationEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ColorGradingModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ColorGradingModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DefaultPostFxModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DefaultPostFxModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DepthOfFieldModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DepthOfFieldModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DitheringModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/DitheringModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/EyeAdaptationModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/EyeAdaptationModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/FogModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/FogModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/GrainModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/GrainModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/MotionBlurModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/MotionBlurModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ScreenSpaceReflectionModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/ScreenSpaceReflectionModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/UserLutModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/UserLutModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/VignetteModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Models/VignetteModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/HistogramMonitor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/HistogramMonitor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/ParadeMonitor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/ParadeMonitor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/VectorscopeMonitor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/VectorscopeMonitor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/WaveformMonitor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Monitors/WaveformMonitor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingBehaviourEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingBehaviourEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingFactory.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingFactory.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingInspector.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingInspector.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingModelEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingModelEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingMonitor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PostProcessingMonitor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/GetSetDrawer.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/GetSetDrawer.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/MinDrawer.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/TrackballGroupDrawer.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/PropertyDrawers/TrackballGroupDrawer.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/CurveEditor.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/CurveEditor.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/EditorGUIHelper.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/EditorGUIHelper.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/EditorResources.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/EditorResources.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/FxStyles.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/FxStyles.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/ReflectionUtils.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Editor/Utils/ReflectionUtils.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/GetSetAttribute.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/GetSetAttribute.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/MinAttribute.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/MinAttribute.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/TrackballAttribute.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/TrackballAttribute.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/TrackballGroupAttribute.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Attributes/TrackballGroupAttribute.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/AmbientOcclusionComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/AmbientOcclusionComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/BloomComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/BloomComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/BuiltinDebugViewsComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/BuiltinDebugViewsComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ChromaticAberrationComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ChromaticAberrationComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ColorGradingComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ColorGradingComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/DepthOfFieldComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/DepthOfFieldComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/DitheringComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/DitheringComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/EyeAdaptationComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/EyeAdaptationComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/FogComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/FogComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/FxaaComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/FxaaComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/GrainComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/GrainComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/MotionBlurComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/MotionBlurComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ScreenSpaceReflectionComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/ScreenSpaceReflectionComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/TaaComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/TaaComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/UserLutComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/UserLutComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/VignetteComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Components/VignetteComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/AmbientOcclusionModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/AmbientOcclusionModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/AntialiasingModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/AntialiasingModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/BloomModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/BloomModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/BuiltinDebugViewsModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/BuiltinDebugViewsModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ChromaticAberrationModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ChromaticAberrationModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ColorGradingModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ColorGradingModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/DepthOfFieldModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/DepthOfFieldModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/DitheringModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/DitheringModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/EyeAdaptationModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/EyeAdaptationModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/FogModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/FogModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/GrainModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/GrainModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/MotionBlurModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/MotionBlurModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ScreenSpaceReflectionModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/ScreenSpaceReflectionModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/UserLutModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/UserLutModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/VignetteModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Models/VignetteModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingBehaviour.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingBehaviour.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingComponent.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingComponent.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingContext.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingContext.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingModel.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingModel.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingProfile.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/PostProcessingProfile.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/ColorGradingCurve.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/ColorGradingCurve.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/GraphicsUtils.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/GraphicsUtils.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/MaterialFactory.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/MaterialFactory.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/RenderTextureFactory.cs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/PostProcessing/Runtime/Utils/RenderTextureFactory.cs.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/GameManager.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/ZombieExplosion.prefab" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/ZombieExplosion.prefab.meta" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Textures.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/contentModel.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Helicopter/in_position.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Helicopter/roger_that.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Player/evacuation_require.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Player/its_aout_time.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Player/player_death_01.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Player/player_death_02.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Player/player_hurt_01.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Player/player_hurt_02.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Player/player_hurt_03.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Player/what_happened.wav" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Player.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Audio/Player/evacuation_require.wav.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Materials/BloodSplatParticle.mat" afterPath="$PROJECT_DIR$/Assets/BloodParticles/Blood/Materials/BloodSplatParticle.mat" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs.meta" afterPath="$PROJECT_DIR$/Assets/Scripts/Countdown.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/ZombieHealth.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/ZombieHealth.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/AfterburnerPhysicsForce.cs.meta" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/AfterburnerPhysicsForce.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/ExplosionFireAndDebris.cs.meta" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/ExplosionFireAndDebris.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/ExplosionPhysicsForce.cs.meta" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/ExplosionPhysicsForce.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/Explosive.cs.meta" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/Explosive.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/ExtinguishableParticleSystem.cs.meta" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/ExtinguishableParticleSystem.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/FireLight.cs.meta" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/FireLight.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/Hose.cs.meta" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/Hose.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/ParticleSystemMultiplier.cs.meta" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/ParticleSystemMultiplier.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/SmokeParticles.cs.meta" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/SmokeParticles.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/WaterHoseParticles.cs.meta" afterPath="$PROJECT_DIR$/Assets/Standard Assets/ParticleSystems/Scripts/WaterHoseParticles.cs.meta" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -485,7 +261,7 @@
       <workItem from="1510050148977" duration="117000" />
       <workItem from="1510050275017" duration="24820000" />
       <workItem from="1510252544609" duration="3095000" />
-      <workItem from="1510257291060" duration="1495000" />
+      <workItem from="1510257291060" duration="2722000" />
     </task>
     <task id="LOCAL-00001" summary="Added helicopter and some sfx">
       <created>1509546246744</created>
@@ -557,11 +333,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510079527743</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added zombie hurt and death VFX, changed helo arrival countdown logic">
+      <created>1510258864539</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1510258864539</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67885000" />
+    <option name="totallyTimeSpent" value="69112000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -641,7 +424,8 @@
     <MESSAGE value="Added zombie hit blood effect" />
     <MESSAGE value="Refactored communication system" />
     <MESSAGE value="Added zombie and helo icons" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added zombie and helo icons" />
+    <MESSAGE value="Added zombie hurt and death VFX, changed helo arrival countdown logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added zombie hurt and death VFX, changed helo arrival countdown logic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
