@@ -232,7 +232,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 20, y: 30, z: 40}
+  m_Size: {x: 20, y: 30, z: 20}
   m_Center: {x: 0, y: 16, z: 0}
 --- !u!81 &81878782067708222
 AudioListener:
@@ -659,7 +659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   spawnPointsParent: {fileID: 0}
-  flare: {fileID: 1748288653693774, guid: e35bd9284c664734e89336e5fca0ab97, type: 2}
+  flarePrefab: {fileID: 1748288653693774, guid: e35bd9284c664734e89336e5fca0ab97,
+    type: 2}
   respawn: 0
 --- !u!114 &114588566101552020
 MonoBehaviour:

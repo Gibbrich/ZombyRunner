@@ -56,25 +56,14 @@ public class ZombieHealth : MonoBehaviour
     {
         isDead = true;
         
-        audioSource.clip = deathSFX;
-        PlayAudioSingleTime();
+        AudioSource.PlayClipAtPoint(deathSFX, transform.position);
 
-        /* todo    - Now just stop zombie running. Change for death animation
-         * @author - Артур
-         * @date   - 07.11.2017
-         * @time   - 13:49
-        */        
-        AICharacterControl control = GetComponent<AICharacterControl>();
-        control.target = null;
-
-        /* todo    - use particle system for destroying zombie if cant use zombie model
-         * @author - Dvurechenskiyi
-         * @date   - 08.11.2017
-         * @time   - 16:58
-        */
+        Vector3 position = transform.position;
+        position.y += 1.5f;
+        GameManager.Instance.PlayZombieDeathExplosion(position);
         GameManager.Instance.ZombieCount++;
         
-        Destroy(gameObject, deathSFX.length);
+        Destroy(gameObject);
     }
 
     private void PlayAudioSingleTime()

@@ -7,14 +7,15 @@ using UnityEngine.UI;
 
 public class Countdown : MonoBehaviour
 {
-    [SerializeField]
-    private float countdownTime = 300.0f;
+    private float countdownTime;
      
     private Text text;
     private State currentState = State.INITIAL;
 
     private void Start()
     {
+        countdownTime = GameManager.Instance.Helicopter.ArrivalTime;
+        
         text = GetComponentInChildren<Text>();
         text.text = countdownTime.ToString(CultureInfo.CurrentCulture);
     }

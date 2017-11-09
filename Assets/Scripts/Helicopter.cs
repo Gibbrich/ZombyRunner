@@ -7,6 +7,12 @@ public class Helicopter : MonoBehaviour
     [SerializeField]
     private float arrivalTime = 300;
     
+    public float ArrivalTime
+    {
+        get { return arrivalTime; }
+        private set { arrivalTime = value; }
+    }
+    
     private new Rigidbody rigidbody;
     private State currentState;
 
@@ -40,7 +46,7 @@ public class Helicopter : MonoBehaviour
             rigidbody.velocity = new Vector3(0, -30, 0);
         }
 
-        if (currentState == State.LANDING && other.name.Equals("Flare"))
+        if (currentState == State.LANDING && other.GetComponent<Terrain>())
         {
             currentState = State.LANDED;
             rigidbody.velocity = Vector3.zero;
