@@ -12,6 +12,16 @@ public class GameManager : Singleton<GameManager>
     public HealthDisplay HealthDisplay { get; private set; }
 
     public UIManager UIManager { get; private set; }
+
+    private float mediumThreshold = 0.3f;
+    private float hardTreshold = 0.7f;
+
+    private Difficulty currentDifficulty = Difficulty.EASY;
+    public Difficulty CurrentDifficulty
+    {
+        get { return currentDifficulty; }
+        set { currentDifficulty = value; }
+    }
     
     [SerializeField]
     private GameObject deathExplosionParticlesPrefab;
@@ -37,6 +47,33 @@ public class GameManager : Singleton<GameManager>
         UIManager = FindObjectOfType<UIManager>();
     }
 
+    private void Update()
+    {
+        if (Helicopter.CalledTime != -1)
+        {
+            float timeLeft = Helicopter.CalledTime / Helicopter.ArrivalTime;
+
+            if (timeLeft <= mediumThreshold)
+            {
+                CurrentDifficulty = Difficulty.EASY;
+            }
+            else if (mediumThreshold < timeLeft && timeLeft <= hardTreshold)
+            {
+                CurrentDifficulty = Difficulty.MEDIUM;
+            }
+            else
+            {
+                CurrentDifficulty = Difficulty.HARD;
+            }
+        }
+        
+        /* todo    - turn on more ZombieSpawners on increasing difficulty
+         * @author - Dvurechenskiyi
+         * @date   - 10.11.2017
+         * @time   - 12:07
+        */        
+    }
+
     public void LoadLevel(string levelName)
     {
         SceneManager.LoadScene(levelName);
@@ -51,7 +88,15 @@ public class GameManager : Singleton<GameManager>
     public void PlayZombieDeathExplosion(Vector3 position)
     {
         GameObject explosion = Instantiate(deathExplosionParticlesPrefab, position, Quaternion.identity);
-//        explosion.GetComponent<ParticleSystem>().Play();
         Destroy(explosion, 3f);
+    }
+    
+    
+    
+    public enum Difficulty
+    {
+        EASY,
+        MEDIUM,
+        HARD
     }
 }

@@ -6,11 +6,16 @@ public class Helicopter : MonoBehaviour
 {
     [SerializeField]
     private float arrivalTime = 300;
-    
     public float ArrivalTime
     {
         get { return arrivalTime; }
-        private set { arrivalTime = value; }
+    }
+
+    private float calledTime = -1f;
+    public float CalledTime
+    {
+        get { return calledTime; }
+        private set { calledTime = value; }
     }
 
     private State currentState = State.AWAIT;
@@ -33,6 +38,8 @@ public class Helicopter : MonoBehaviour
     {
         if (CurrentState == State.AWAIT)
         {
+            CalledTime = Time.time;
+            
             CurrentState = State.IN_TRANSIT;
             
             transform.LookAt(GameManager.Instance.Player.Flare.transform);

@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     private InnerVoice innerVoice;
 
     private bool isAlive = true;
+    private State currentState = State.ALIVE;
     
     [SerializeField]
     private bool respawn = false;
@@ -65,13 +66,13 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        if (isAlive)
+        if (currentState == State.ALIVE)
         {
             Health -= damage;
 
             if (Health <= 0)
             {
-                isAlive = false;
+                currentState = State.DEAD;
                 
                 innerVoice.PlayDieSFX();
                 GameManager.Instance.UIManager.PlayerDied();
@@ -82,5 +83,20 @@ public class Player : MonoBehaviour
                 GameManager.Instance.UIManager.UpdateHealthDisplay(Health);
             }
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.GetComponent<Helicopter>())
+        {
+            currentState = State.RESCUED;
+        }
+    }
+
+    private enum State
+    {
+        ALIVE,
+        DEAD,
+        RESCUED
     }
 }
