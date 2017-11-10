@@ -513,20 +513,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
@@ -644,8 +630,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36a27e8b7baf00841a0790c0eb971262, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whatHappened: {fileID: 8300000, guid: 6f49368f721214fcc81fda6a7ccf9343, type: 3}
+  whatHappened: {fileID: 8300000, guid: df608d90224e6da4197f4d0e52b1b83e, type: 3}
   goodLandingArea: {fileID: 8300000, guid: 0f00476efd1774d2587939e6bd1a6bb4, type: 3}
+  hurtSFX:
+  - {fileID: 8300000, guid: d5ef22419e7ec474692ca11d50759ffa, type: 3}
+  - {fileID: 8300000, guid: 3922f4602891f30459fe1a2dcd967a00, type: 3}
+  - {fileID: 8300000, guid: 3c273c4d5cffe3947b2064cb2612d3f8, type: 3}
+  dieSFX:
+  - {fileID: 8300000, guid: c2f8f375d5b45614880e2a2cad7c1256, type: 3}
+  - {fileID: 8300000, guid: cb4bdfc2caedd2c4099d778925833d99, type: 3}
 --- !u!114 &114578795293805084
 MonoBehaviour:
   m_ObjectHideFlags: 1

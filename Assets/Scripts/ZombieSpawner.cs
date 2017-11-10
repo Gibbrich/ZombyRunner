@@ -28,7 +28,8 @@ public class ZombieSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Time.time - lastSpawnTime >= nextSpawnTime)
+        if (GameManager.Instance.Helicopter.CurrentState != Helicopter.State.AWAIT 
+            && Time.time - lastSpawnTime >= nextSpawnTime)
         {
             Spawn();
             nextSpawnTime = Random.Range(spawnThresholdMin, spawnThresholdMax);

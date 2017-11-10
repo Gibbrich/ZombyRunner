@@ -9,6 +9,12 @@ public class RadioSystem : MonoBehaviour
 
     [SerializeField]
     private AudioClip heliCallReply;
+
+    [SerializeField]
+    private AudioClip heliInPosition;
+
+    [SerializeField]
+    private AudioClip heliInPositionReply;
     
     private AudioSource audioSource;
     
@@ -33,5 +39,19 @@ public class RadioSystem : MonoBehaviour
         
         GameManager.Instance.Helicopter.CallHelicopter();
         GameManager.Instance.UIManager.StartHelicopterArriveCountdown();
+    }
+
+    public void PlayHelicopterInPosition()
+    {
+        audioSource.clip = heliInPosition;
+        audioSource.Play();
+        
+        Invoke("PlayHelicopterInPositionReply", heliInPosition.length + 1f);
+    }
+
+    private void PlayHelicopterInPositionReply()
+    {
+        audioSource.clip = heliInPositionReply;
+        audioSource.Play();
     }
 }

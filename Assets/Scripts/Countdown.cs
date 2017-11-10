@@ -37,6 +37,7 @@ public class Countdown : MonoBehaviour
                 countdownTime = 0;
                 currentState = State.STOPPED;
                 text.color = Color.white;
+                FindObjectOfType<RadioSystem>().PlayHelicopterInPosition();
             }
         }
     }

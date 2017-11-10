@@ -12,9 +12,16 @@ public class Helicopter : MonoBehaviour
         get { return arrivalTime; }
         private set { arrivalTime = value; }
     }
-    
+
+    private State currentState = State.AWAIT;
+    public State CurrentState
+    {
+        get { return currentState; }
+        set { currentState = value; }
+    }
+
     private new Rigidbody rigidbody;
-    private State currentState;
+    
 
     // Use this for initialization
     void Start()
@@ -24,9 +31,9 @@ public class Helicopter : MonoBehaviour
 
     public void CallHelicopter()
     {
-        if (currentState == State.AWAIT)
+        if (CurrentState == State.AWAIT)
         {
-            currentState = State.IN_TRANSIT;
+            CurrentState = State.IN_TRANSIT;
             
             transform.LookAt(GameManager.Instance.Player.Flare.transform);
             Vector3 rotationEulerAngles = transform.rotation.eulerAngles;
@@ -40,21 +47,21 @@ public class Helicopter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (currentState == State.IN_TRANSIT && other.GetComponent<ClearArea>())
+        if (CurrentState == State.IN_TRANSIT && other.GetComponent<ClearArea>())
         {
-            currentState = State.LANDING;
+            CurrentState = State.LANDING;
             rigidbody.velocity = new Vector3(0, -30, 0);
         }
 
-        if (currentState == State.LANDING && other.GetComponent<Terrain>())
+        if (CurrentState == State.LANDING && other.GetComponent<Terrain>())
         {
-            currentState = State.LANDED;
+            CurrentState = State.LANDED;
             rigidbody.velocity = Vector3.zero;
         }
 
-        if (currentState == State.LANDED && other.GetComponent<Player>())
+        if (CurrentState == State.LANDED && other.GetComponent<Player>())
         {
-            currentState = State.EVACUATING;
+            CurrentState = State.EVACUATING;
             /* todo    - move helicopter
              * @author - Артур
              * @date   - 07.11.2017
@@ -64,7 +71,7 @@ public class Helicopter : MonoBehaviour
         }
     }
 
-    private enum State
+    public enum State
     {
         AWAIT,
         IN_TRANSIT,

@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     public GameObject Flare { get; private set; }
 
     private InnerVoice innerVoice;
+
+    private bool isAlive = true;
     
     [SerializeField]
     private bool respawn = false;
@@ -30,6 +32,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         innerVoice = GetComponentInChildren<InnerVoice>();
+        Respawn();
     }
 
     // Update is called once per frame
@@ -51,7 +54,7 @@ public class Player : MonoBehaviour
     private void Respawn()
     {
         Transform[] spawnPoints = spawnPointsParent.GetComponentsInChildren<Transform>();
-        int id = Random.Range(1, spawnPoints.Length);
+        int id = Random.Range(0, spawnPoints.Length);
         transform.position = spawnPoints[id].position;
     }
     
@@ -62,17 +65,22 @@ public class Player : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        Health -= damage;
+        if (isAlive)
+        {
+            Health -= damage;
 
-        if (Health <= 0)
-        {
-            // play charachter die sound
-            GameManager.Instance.UIManager.PlayerDied();
-        }
-        else
-        {
-            // play character hurt sound
-            GameManager.Instance.UIManager.UpdateHealthDisplay(Health);
+            if (Health <= 0)
+            {
+                isAlive = false;
+                
+                innerVoice.PlayDieSFX();
+                GameManager.Instance.UIManager.PlayerDied();
+            }
+            else
+            {
+                innerVoice.PlayHurtSFX();
+                GameManager.Instance.UIManager.UpdateHealthDisplay(Health);
+            }
         }
     }
 }

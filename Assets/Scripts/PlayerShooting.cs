@@ -7,7 +7,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField]
     private float timeBetweenBullets = 0.15f;
     [SerializeField]
-    private float range = 100f;
+    private float range = 1000f;
 
 
     private float timer;
