@@ -17,7 +17,6 @@ public class Player : MonoBehaviour
 
     private InnerVoice innerVoice;
 
-    private bool isAlive = true;
     private State currentState = State.ALIVE;
     
     [SerializeField]

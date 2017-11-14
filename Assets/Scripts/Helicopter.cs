@@ -24,9 +24,10 @@ public class Helicopter : MonoBehaviour
         get { return currentState; }
         set { currentState = value; }
     }
-
-    private new Rigidbody rigidbody;
     
+    private float landingSpeed = 30f;
+    private float landingTreshold = 3f;
+    private new Rigidbody rigidbody;
 
     // Use this for initialization
     void Start()
@@ -41,14 +42,22 @@ public class Helicopter : MonoBehaviour
             CalledTime = Time.time;
             
             CurrentState = State.IN_TRANSIT;
-            
-            transform.LookAt(GameManager.Instance.Player.Flare.transform);
-            Vector3 rotationEulerAngles = transform.rotation.eulerAngles;
-            rotationEulerAngles.x = 0;
-            rotationEulerAngles.z = 0;
-            transform.rotation = Quaternion.Euler(rotationEulerAngles);
 
-            rigidbody.velocity = transform.forward * 50;
+            Transform flareTransform = GameManager.Instance.Player.Flare.transform;
+
+            // rotate helicopter towards flare 
+            Vector3 flarePosition = flareTransform.position;
+            flarePosition.y = transform.position.y;            
+            transform.LookAt(flarePosition);
+            
+            // calculate landing time
+            float landingTime = (transform.position.y - flareTransform.position.y) / landingSpeed;
+
+            // calculate moving time
+            float movingTime = ArrivalTime - landingTime;
+
+            // set moving speed
+            rigidbody.velocity = transform.forward * Vector3.Distance(transform.position, flarePosition) / movingTime;
         }
     }
 
@@ -57,7 +66,7 @@ public class Helicopter : MonoBehaviour
         if (CurrentState == State.IN_TRANSIT && other.GetComponent<ClearArea>())
         {
             CurrentState = State.LANDING;
-            rigidbody.velocity = new Vector3(0, -30, 0);
+            rigidbody.velocity = Vector3.down * landingSpeed;
         }
 
         if (CurrentState == State.LANDING && other.GetComponent<Terrain>())
