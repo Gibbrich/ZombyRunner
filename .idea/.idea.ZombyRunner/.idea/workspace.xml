@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f9e4822-c51b-4506-8264-7b8700f54491" name="Default" comment="Fi">
+    <list default="true" id="0f9e4822-c51b-4506-8264-7b8700f54491" name="Default" comment="Fixed helicopter arrival logic">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogText.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogText.cs.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/contentModel.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Standard Assets/Environment/Water/Water/Materials/WaterProDaytime.mat" afterPath="$PROJECT_DIR$/Assets/Standard Assets/Environment/Water/Water/Materials/WaterProDaytime.mat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" />
     </list>
     <list id="be1de843-0f82-403e-ba54-f1d7f885d126" name="Changed helicopter arrival logic" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,9 +22,26 @@
       <file leaf-file-name="GameManager.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1460">
+            <state relative-caret-position="192">
               <caret line="73" column="10" lean-forward="false" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
-              <folding />
+              <folding>
+                <marker date="1510677876546" expanded="false" signature="6:113" ph="..." />
+                <marker date="1510677876546" expanded="true" signature="164:2542" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="568:665" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="802:970" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="857:964" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="1023:1243" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="1270:2002" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="1317:1799" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="1450:1531" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="1608:1691" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="1708:1789" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="1817:1988" ph="/* todo    - turn on more ZombieSpawners on increasing difficulty ... */" />
+                <marker date="1510677876546" expanded="true" signature="2047:2102" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="2108:2229" ph="/* todo    - move to ZombieHealth script ... */" />
+                <marker date="1510677876546" expanded="true" signature="2293:2443" ph="{...}" />
+                <marker date="1510677876546" expanded="true" signature="2485:2540" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -34,35 +49,40 @@
       <file leaf-file-name="ZombieAttack.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieAttack.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1180">
+            <state relative-caret-position="1140">
               <caret line="59" column="41" lean-forward="false" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-              <folding />
+              <folding>
+                <marker date="1510677876655" expanded="false" signature="6:78" ph="..." />
+                <marker date="1510677876655" expanded="true" signature="121:1366" ph="{...}" />
+                <marker date="1510677876655" expanded="true" signature="503:566" ph="{...}" />
+                <marker date="1510677876655" expanded="true" signature="624:796" ph="{...}" />
+                <marker date="1510677876655" expanded="true" signature="708:790" ph="{...}" />
+                <marker date="1510677876655" expanded="true" signature="848:964" ph="{...}" />
+                <marker date="1510677876655" expanded="true" signature="902:958" ph="{...}" />
+                <marker date="1510677876655" expanded="true" signature="1015:1132" ph="{...}" />
+                <marker date="1510677876655" expanded="true" signature="1069:1126" ph="{...}" />
+                <marker date="1510677876655" expanded="true" signature="1159:1364" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Player.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
+      <file leaf-file-name="InnerVoice.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="520">
+              <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
               <folding>
-                <marker date="1510678245225" expanded="false" signature="6:78" ph="..." />
-                <marker date="1510678245225" expanded="true" signature="115:2238" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="568:651" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="677:767" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="825:1090" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="873:945" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="999:1084" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="1118:1329" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="1363:1458" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="1500:1986" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="1547:1980" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="1617:1807" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="1824:1970" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="2035:2155" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="2087:2149" ph="{...}" />
-                <marker date="1510678245225" expanded="true" signature="2179:2236" ph="{...}" />
+                <marker date="1510680195876" expanded="false" signature="6:78" ph="..." />
+                <marker date="1510680195876" expanded="true" signature="119:1620" ph="{...}" />
+                <marker date="1510680195876" expanded="true" signature="489:654" ph="{...}" />
+                <marker date="1510680195876" expanded="true" signature="715:796" ph="{...}" />
+                <marker date="1510680195876" expanded="true" signature="829:1202" ph="{...}" />
+                <marker date="1510680195876" expanded="true" signature="844:1002" ph="/* todo    - for now do not play goodLandingArea clip ... */" />
+                <marker date="1510680195876" expanded="true" signature="1011:1161" ph="/* audioSource.clip = goodLandingArea; ... */" />
+                <marker date="1510680195876" expanded="true" signature="1237:1287" ph="{...}" />
+                <marker date="1510680195876" expanded="true" signature="1318:1454" ph="{...}" />
+                <marker date="1510680195876" expanded="true" signature="1484:1618" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -71,7 +91,7 @@
       <file leaf-file-name="Helicopter.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Helicopter.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="511">
+            <state relative-caret-position="537">
               <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
               <folding>
                 <marker date="1510678817664" expanded="false" signature="6:78" ph="..." />
@@ -93,12 +113,34 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="DialogText.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogText.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="81" lean-forward="false" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
+              <folding>
+                <marker date="1510680195798" expanded="true" signature="30:579" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ZombieSpawner.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1280">
+            <state relative-caret-position="892">
               <caret line="64" column="68" lean-forward="false" selection-start-line="64" selection-start-column="68" selection-end-line="64" selection-end-column="68" />
-              <folding />
+              <folding>
+                <marker date="1510677876671" expanded="false" signature="6:150" ph="..." />
+                <marker date="1510677876671" expanded="true" signature="194:2073" ph="{...}" />
+                <marker date="1510677876671" expanded="true" signature="781:793" ph="{...}" />
+                <marker date="1510677876671" expanded="true" signature="851:1166" ph="{...}" />
+                <marker date="1510677876671" expanded="true" signature="1000:1160" ph="{...}" />
+                <marker date="1510677876671" expanded="true" signature="1192:2071" ph="{...}" />
+                <marker date="1510677876671" expanded="true" signature="1708:1767" ph="{...}" />
+                <marker date="1510677876671" expanded="true" signature="1836:1897" ph="{...}" />
+                <marker date="1510677876671" expanded="true" signature="1910:1969" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,6 +153,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/AICharacterControl.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DialogText.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PlayerShooting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs" root0="FORCE_HIGHLIGHTING" />
@@ -146,12 +189,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerShooting.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Countdown.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/RadioSystem.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ZombieAttack.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DialogText.cs" />
       </list>
     </option>
   </component>
@@ -193,6 +237,24 @@
               <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
               <item name="ZombyRunner (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ZombyRunner (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ZombyRunner (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="ZombyRunner (4 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assembly-CSharp" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Assets" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Scripts" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -203,7 +265,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="helicop&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Helicopter.cs&#10;zombie&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/ZombieAttack.cs&#10;Zom&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/ZombieSpawner.cs&#10;Coun&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Countdown.cs&#10;Game&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/GameManager.cs&#10;Heli&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Helicopter.cs&#10;zombies&#9;null&#9;null&#10;Pla&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Player.cs&#10;Inner&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/InnerVoice.cs&#10;player&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Player.cs&#10;zombiea&#9;null&#9;null&#10;zom&#9;null&#9;null&#10;Ui&#9;null&#9;null&#10;hel&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Helicopter.cs&#10;radio&#9;null&#9;null&#10;clear&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/ClearArea.cs&#10;pla&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Player.cs&#10;helic&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Helicopter.cs&#10;eyes&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Eyes.cs&#10;da&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/DayCycle.cs&#10;heli&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Helicopter.cs" />
+    <property name="SearchEverywhereHistoryKey" value="inner&#9;FILE&#9;file://D:/projects/Unity/ZombyRunner/Assets/Scripts/InnerVoice.cs&#10;helicop&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Helicopter.cs&#10;zombie&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/ZombieAttack.cs&#10;Zom&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/ZombieSpawner.cs&#10;Coun&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Countdown.cs&#10;Game&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/GameManager.cs&#10;Heli&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Helicopter.cs&#10;zombies&#9;null&#9;null&#10;Pla&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Player.cs&#10;Inner&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/InnerVoice.cs&#10;player&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Player.cs&#10;zombiea&#9;null&#9;null&#10;zom&#9;null&#9;null&#10;Ui&#9;null&#9;null&#10;hel&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Helicopter.cs&#10;radio&#9;null&#9;null&#10;clear&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/ClearArea.cs&#10;pla&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Player.cs&#10;helic&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Helicopter.cs&#10;eyes&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Eyes.cs&#10;da&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/DayCycle.cs&#10;heli&#9;FILE&#9;file://D:/Unity/projects/ZombyRunner/Assets/Scripts/Helicopter.cs" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Changed_helicopter_arrival_logic.patch" />
   </component>
@@ -260,7 +322,7 @@
       <workItem from="1509699083492" duration="1910000" />
       <workItem from="1510143519183" duration="8355000" />
       <workItem from="1510293993833" duration="8728000" />
-      <workItem from="1510678050595" duration="789000" />
+      <workItem from="1510678050595" duration="2689000" />
     </task>
     <task id="LOCAL-00001" summary="Added helicopter and some sfx">
       <created>1509546246744</created>
@@ -297,11 +359,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510301313475</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed helicopter arrival logic">
+      <created>1510678884999</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1510678884999</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44813000" />
+    <option name="totallyTimeSpent" value="46713000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -375,7 +444,8 @@
     <MESSAGE value="Refactoring and added landing area" />
     <MESSAGE value="Added helicopter arrival countdown, zombies count and fixed hanging helo while colliding trees" />
     <MESSAGE value="Changed communication sounds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed communication sounds" />
+    <MESSAGE value="Fixed helicopter arrival logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed helicopter arrival logic" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -403,7 +473,24 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1460">
           <caret line="73" column="10" lean-forward="false" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
-          <folding />
+          <folding>
+            <marker date="1510677876546" expanded="false" signature="6:113" ph="..." />
+            <marker date="1510677876546" expanded="true" signature="164:2542" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="568:665" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="802:970" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="857:964" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1023:1243" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1270:2002" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1317:1799" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1450:1531" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1608:1691" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1708:1789" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1817:1988" ph="/* todo    - turn on more ZombieSpawners on increasing difficulty ... */" />
+            <marker date="1510677876546" expanded="true" signature="2047:2102" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="2108:2229" ph="/* todo    - move to ZombieHealth script ... */" />
+            <marker date="1510677876546" expanded="true" signature="2293:2443" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="2485:2540" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -411,7 +498,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1180">
           <caret line="59" column="41" lean-forward="false" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-          <folding />
+          <folding>
+            <marker date="1510677876655" expanded="false" signature="6:78" ph="..." />
+            <marker date="1510677876655" expanded="true" signature="121:1366" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="503:566" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="624:796" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="708:790" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="848:964" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="902:958" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="1015:1132" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="1069:1126" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="1159:1364" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -419,7 +517,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1280">
           <caret line="64" column="68" lean-forward="false" selection-start-line="64" selection-start-column="68" selection-end-line="64" selection-end-column="68" />
-          <folding />
+          <folding>
+            <marker date="1510677876671" expanded="false" signature="6:150" ph="..." />
+            <marker date="1510677876671" expanded="true" signature="194:2073" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="781:793" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="851:1166" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="1000:1160" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="1192:2071" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="1708:1767" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="1836:1897" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="1910:1969" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -537,6 +645,18 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="32" column="49" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="49" />
+          <folding>
+            <marker date="1510680195876" expanded="false" signature="6:78" ph="..." />
+            <marker date="1510680195876" expanded="true" signature="119:1620" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="489:654" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="715:796" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="829:1202" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="844:1002" ph="/* todo    - for now do not play goodLandingArea clip ... */" />
+            <marker date="1510680195876" expanded="true" signature="1011:1161" ph="/* audioSource.clip = goodLandingArea; ... */" />
+            <marker date="1510680195876" expanded="true" signature="1237:1287" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="1318:1454" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="1484:1618" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -815,13 +935,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieCount.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -857,33 +970,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1280">
-          <caret line="64" column="68" lean-forward="false" selection-start-line="64" selection-start-column="68" selection-end-line="64" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieAttack.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1180">
-          <caret line="59" column="41" lean-forward="false" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1460">
-          <caret line="73" column="10" lean-forward="false" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
+        <state relative-caret-position="-528">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <marker date="1510678245225" expanded="false" signature="6:78" ph="..." />
@@ -906,9 +995,100 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieSpawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="892">
+          <caret line="64" column="68" lean-forward="false" selection-start-line="64" selection-start-column="68" selection-end-line="64" selection-end-column="68" />
+          <folding>
+            <marker date="1510677876671" expanded="false" signature="6:150" ph="..." />
+            <marker date="1510677876671" expanded="true" signature="194:2073" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="781:793" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="851:1166" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="1000:1160" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="1192:2071" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="1708:1767" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="1836:1897" ph="{...}" />
+            <marker date="1510677876671" expanded="true" signature="1910:1969" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="73" column="10" lean-forward="false" selection-start-line="73" selection-start-column="10" selection-end-line="73" selection-end-column="10" />
+          <folding>
+            <marker date="1510677876546" expanded="false" signature="6:113" ph="..." />
+            <marker date="1510677876546" expanded="true" signature="164:2542" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="568:665" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="802:970" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="857:964" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1023:1243" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1270:2002" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1317:1799" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1450:1531" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1608:1691" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1708:1789" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="1817:1988" ph="/* todo    - turn on more ZombieSpawners on increasing difficulty ... */" />
+            <marker date="1510677876546" expanded="true" signature="2047:2102" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="2108:2229" ph="/* todo    - move to ZombieHealth script ... */" />
+            <marker date="1510677876546" expanded="true" signature="2293:2443" ph="{...}" />
+            <marker date="1510677876546" expanded="true" signature="2485:2540" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ZombieAttack.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="59" column="41" lean-forward="false" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
+          <folding>
+            <marker date="1510677876655" expanded="false" signature="6:78" ph="..." />
+            <marker date="1510677876655" expanded="true" signature="121:1366" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="503:566" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="624:796" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="708:790" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="848:964" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="902:958" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="1015:1132" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="1069:1126" ph="{...}" />
+            <marker date="1510677876655" expanded="true" signature="1159:1364" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="28" column="34" lean-forward="false" selection-start-line="28" selection-start-column="34" selection-end-line="28" selection-end-column="34" />
+          <folding>
+            <marker date="1510680195876" expanded="false" signature="6:78" ph="..." />
+            <marker date="1510680195876" expanded="true" signature="119:1620" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="489:654" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="715:796" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="829:1202" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="844:1002" ph="/* todo    - for now do not play goodLandingArea clip ... */" />
+            <marker date="1510680195876" expanded="true" signature="1011:1161" ph="/* audioSource.clip = goodLandingArea; ... */" />
+            <marker date="1510680195876" expanded="true" signature="1237:1287" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="1318:1454" ph="{...}" />
+            <marker date="1510680195876" expanded="true" signature="1484:1618" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DialogText.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="81" lean-forward="false" selection-start-line="10" selection-start-column="81" selection-end-line="10" selection-end-column="81" />
+          <folding>
+            <marker date="1510680195798" expanded="true" signature="30:579" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Helicopter.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="511">
+        <state relative-caret-position="537">
           <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
           <folding>
             <marker date="1510678817664" expanded="false" signature="6:78" ph="..." />

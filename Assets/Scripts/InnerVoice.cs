@@ -26,6 +26,11 @@ public class InnerVoice : MonoBehaviour
         radioSystem = FindObjectOfType<RadioSystem>();
         
         audioSource = GetComponent<AudioSource>();
+        PlayDialog(whatHappened, "");
+    }
+
+    private void PlayDialog(AudioClip clip, string message)
+    {
         audioSource.clip = whatHappened;
         audioSource.Play();
     }
