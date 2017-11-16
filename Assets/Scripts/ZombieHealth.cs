@@ -5,8 +5,15 @@ using UnityStandardAssets.Characters.ThirdPerson;
 
 public class ZombieHealth : MonoBehaviour
 {
+    private static readonly string DIE_TRIGGER = "dieTrigger";
+    
     [SerializeField]
     private float health = 100;
+    public float Health
+    {
+        get { return health; }
+        private set { health = value; }
+    }
 
     [SerializeField]
     private AudioClip hurtSFX;
@@ -36,12 +43,12 @@ public class ZombieHealth : MonoBehaviour
     {
         if (!isDead)
         {
-            health -= damage;
+            Health -= damage;
 
             hitParticles.transform.position = shotPosition;
             hitParticles.Play();
 
-            if (health > 0)
+            if (Health > 0)
             {
                 PlayAudioSingleTime();         
             }

@@ -7,6 +7,12 @@ public class Player : MonoBehaviour
     [SerializeField]
     private float health = 100;
     
+    public float Health
+    {
+        get { return health; }
+        private set { health = value; }
+    }
+    
     [SerializeField]
     private GameObject spawnPointsParent;
 
@@ -25,11 +31,6 @@ public class Player : MonoBehaviour
 
     private ClearArea clearArea;
 
-    public float Health
-    {
-        get { return health; }
-        private set { health = value; }
-    }
 
     private void Start()
     {

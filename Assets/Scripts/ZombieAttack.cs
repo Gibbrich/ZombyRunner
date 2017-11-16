@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class ZombieAttack : MonoBehaviour
 {
+    private static readonly string ATTACK_TRIGGER = "attackTrigger";
+    
     [SerializeField]
     private AudioClip[] attackSFX;
 
@@ -16,6 +18,8 @@ public class ZombieAttack : MonoBehaviour
     [SerializeField]
     private float damage = 10;
 
+    private Animator animator;
+
     private bool isPlayerInRange = false;
     private float lastAttackTime;
 
@@ -23,6 +27,7 @@ public class ZombieAttack : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -53,6 +58,8 @@ public class ZombieAttack : MonoBehaviour
 
     private void Attack()
     {
+        animator.SetTrigger(ATTACK_TRIGGER);
+        
         int sfxId = Random.Range(0, attackSFX.Length);
         audioSource.clip = attackSFX[sfxId];
         audioSource.Play();
