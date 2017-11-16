@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f9e4822-c51b-4506-8264-7b8700f54491" name="Default" comment="Added difficulty change and some fixes">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/contentModel.xml" />
+    <list default="true" id="0f9e4822-c51b-4506-8264-7b8700f54491" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Objectives.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Objectives/ObjectivesAnimatorController.controller" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Objectives/ObjectivesAnimatorController.controller.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ShowObjective1.anim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ShowObjective1.anim.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ShowObjective2.anim" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/ShowObjective2.anim.meta" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Objective.cs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Assets/Scripts/Objective.cs.meta" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.ZombyRunner/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.controller" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/Canvas.controller" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerRescued.anim" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI/PlayerRescued.anim" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/ClearArea.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/ClearArea.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Helicopter.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/InnerVoice.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/RadioSystem.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/RadioSystem.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" afterPath="$PROJECT_DIR$/Assets/Scripts/UIManager.cs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" afterPath="$PROJECT_DIR$/Assets/_Scenes/Game.unity" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -406,11 +405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1510306459555</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added objectives and fixed some bugs">
+      <created>1510860958446</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1510860958446</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55660000" />
+    <option name="totallyTimeSpent" value="56134000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -502,7 +508,8 @@
     <MESSAGE value="Added helicopter arrival countdown, zombies count and fixed hanging helo while colliding trees" />
     <MESSAGE value="Changed communication sounds" />
     <MESSAGE value="Added difficulty change and some fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added difficulty change and some fixes" />
+    <MESSAGE value="Added objectives and fixed some bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added objectives and fixed some bugs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
