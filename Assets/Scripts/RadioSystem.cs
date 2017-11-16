@@ -35,6 +35,7 @@ public class RadioSystem : MonoBehaviour
     {
         Action action = () =>
         {
+            GameManager.Instance.UIManager.ShowCurrentObjective();
             GameManager.Instance.Helicopter.CallHelicopter();
             GameManager.Instance.UIManager.StartHelicopterArriveCountdown();
         };

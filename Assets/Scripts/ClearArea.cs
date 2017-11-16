@@ -10,7 +10,7 @@ public class ClearArea : MonoBehaviour
 
     private bool isFoundClearArea = false;
 
-    private bool IsFoundClearArea
+    public bool IsFoundClearArea
     {
         get { return isFoundClearArea; }
 
@@ -30,7 +30,10 @@ public class ClearArea : MonoBehaviour
     {
         timeSinceLastTrigger += Time.deltaTime;
 
-        IsFoundClearArea = timeSinceLastTrigger >= 1f && Time.time >= 10f;
+        if (GameManager.Instance.Helicopter.CurrentState == Helicopter.State.AWAIT)
+        {
+            IsFoundClearArea = timeSinceLastTrigger >= 1f && Time.time >= 10f;
+        }
     }
 
     private void OnTriggerStay(Collider other)

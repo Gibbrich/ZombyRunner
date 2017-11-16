@@ -69,7 +69,7 @@ public class Helicopter : MonoBehaviour
             rigidbody.velocity = Vector3.down * landingSpeed;
         }
 
-        if (CurrentState == State.LANDING && other.GetComponent<Terrain>())
+        if (CurrentState == State.LANDING && other.name.Equals("Flare"))
         {
             CurrentState = State.LANDED;
             rigidbody.velocity = Vector3.zero;
@@ -82,7 +82,8 @@ public class Helicopter : MonoBehaviour
              * @author - Артур
              * @date   - 07.11.2017
              * @time   - 16:54
-            */   
+            */
+            GameManager.Instance.UIManager.CompleteCurrentObjective();
             GameManager.Instance.UIManager.PlayerRescued();
         }
     }

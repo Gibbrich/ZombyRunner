@@ -34,7 +34,13 @@ public class InnerVoice : MonoBehaviour
 
     private void PlayStartDialog()
     {
-        PlayDialog(whatHappened, DialogText.WHAT_HAPPENED, null);
+        Action action = () => Invoke("ShowObjective", whatHappened.length);
+        PlayDialog(whatHappened, DialogText.WHAT_HAPPENED, action);
+    }
+
+    private void ShowObjective()
+    {
+        GameManager.Instance.UIManager.ShowCurrentObjective();
     }
 
     /* todo    - duplicate method in RadioSystem

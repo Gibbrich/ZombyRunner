@@ -23,6 +23,8 @@ public class Player : MonoBehaviour
     private bool respawn = false;
     private readonly bool lastRespawnToggle = false;
 
+    private ClearArea clearArea;
+
     public float Health
     {
         get { return health; }
@@ -32,6 +34,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         innerVoice = GetComponentInChildren<InnerVoice>();
+        clearArea = GetComponentInChildren<ClearArea>();
         Respawn();
     }
 
@@ -44,8 +47,11 @@ public class Player : MonoBehaviour
             respawn = false;
         }
         
-        if (Input.GetButtonDown("CallHeli"))
+        if (GameManager.Instance.Helicopter.CurrentState == Helicopter.State.AWAIT && 
+            clearArea.IsFoundClearArea && 
+            Input.GetButtonDown("CallHeli"))
         {
+            GameManager.Instance.UIManager.CompleteCurrentObjective();
             innerVoice.FindClearArea();
             DropFlare();
         }

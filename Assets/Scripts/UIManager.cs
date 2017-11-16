@@ -15,7 +15,13 @@ public class UIManager : MonoBehaviour
     private Animator animator;
     
     private Text dialogText;
-    private float dialogStartTime;
+
+    [SerializeField]
+    private GameObject objectivesParent;
+    [SerializeField]
+    private Objective[] objectiveArray;
+
+    private int currentObjective = 0;
     
     // Use this for initialization
     void Start()
@@ -67,7 +73,6 @@ public class UIManager : MonoBehaviour
     {
         dialogText.text = message;
         dialogText.enabled = true;
-        dialogStartTime = Time.time;
         
         Invoke("HideDialogWindow", length);
     }
@@ -75,5 +80,17 @@ public class UIManager : MonoBehaviour
     private void HideDialogWindow()
     {
         dialogText.enabled = false;
+    }
+
+    public void ShowCurrentObjective()
+    {
+        objectivesParent.GetComponent<Text>().enabled = true;
+        objectiveArray[currentObjective].Show();
+    }
+
+    public void CompleteCurrentObjective()
+    {
+        objectiveArray[currentObjective].Complete();
+        currentObjective++;
     }
 }
