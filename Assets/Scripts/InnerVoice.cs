@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class InnerVoice : MonoBehaviour
 {
@@ -26,13 +28,31 @@ public class InnerVoice : MonoBehaviour
         radioSystem = FindObjectOfType<RadioSystem>();
         
         audioSource = GetComponent<AudioSource>();
-        PlayDialog(whatHappened, "");
+        
+        Invoke("PlayStartDialog", 1f);
     }
 
-    private void PlayDialog(AudioClip clip, string message)
+    private void PlayStartDialog()
     {
-        audioSource.clip = whatHappened;
+        PlayDialog(whatHappened, DialogText.WHAT_HAPPENED, null);
+    }
+
+    /* todo    - duplicate method in RadioSystem
+     * @author - Dvurechenskiyi
+     * @date   - 16.11.2017
+     * @time   - 16:54
+    */    
+    public void PlayDialog(AudioClip clip, string message, Action postAction)
+    {
+        audioSource.clip = clip;
         audioSource.Play();
+        
+        GameManager.Instance.UIManager.ShowDialogWindow(message, clip.length);
+
+        if (postAction != null)
+        {
+            postAction.Invoke();
+        }
     }
 
     public void FindClearArea()

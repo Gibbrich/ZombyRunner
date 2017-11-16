@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,32 +27,42 @@ public class RadioSystem : MonoBehaviour
 
     public void CallHelicopter()
     {
-        audioSource.clip = initialHeliCall;
-        audioSource.Play();
-        
-        Invoke("ReplyHelicopter", initialHeliCall.length + 1f);
+        Action action = () => Invoke("ReplyHelicopter", initialHeliCall.length + 1f);
+        PlayDialog(initialHeliCall, DialogText.EVACUATION_REQUIRE, action);
     }
 
     private void ReplyHelicopter()
     {
-        audioSource.clip = heliCallReply;
-        audioSource.Play();
+        Action action = () =>
+        {
+            GameManager.Instance.Helicopter.CallHelicopter();
+            GameManager.Instance.UIManager.StartHelicopterArriveCountdown();
+        };
         
-        GameManager.Instance.Helicopter.CallHelicopter();
-        GameManager.Instance.UIManager.StartHelicopterArriveCountdown();
+        PlayDialog(heliCallReply, DialogText.ROGER_THAT, action);
     }
 
     public void PlayHelicopterInPosition()
     {
-        audioSource.clip = heliInPosition;
+        Action action = () => Invoke("PlayHelicopterInPositionReply", heliInPosition.length + 1f);
+        PlayDialog(heliInPosition, DialogText.HELO_IN_POSITION, action);
+    }
+
+    public void PlayDialog(AudioClip clip, string message, Action postAction)
+    {
+        audioSource.clip = clip;
         audioSource.Play();
         
-        Invoke("PlayHelicopterInPositionReply", heliInPosition.length + 1f);
+        GameManager.Instance.UIManager.ShowDialogWindow(message, clip.length);
+
+        if (postAction != null)
+        {
+            postAction.Invoke();
+        }
     }
 
     private void PlayHelicopterInPositionReply()
     {
-        audioSource.clip = heliInPositionReply;
-        audioSource.Play();
+        PlayDialog(heliInPositionReply, DialogText.ITS_ABOUT_TIME, null);
     }
 }

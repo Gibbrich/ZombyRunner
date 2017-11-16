@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -13,11 +14,15 @@ public class UIManager : MonoBehaviour
     private HealthDisplay healthDisplay;
     private Animator animator;
     
+    private Text dialogText;
+    private float dialogStartTime;
+    
     // Use this for initialization
     void Start()
     {
         healthDisplay = GetComponentInChildren<HealthDisplay>();
         animator = GetComponent<Animator>();
+        dialogText = GameObject.Find("DialogText").GetComponent<Text>();
     }
     
     public void UpdateHealthDisplay(float value)
@@ -56,5 +61,19 @@ public class UIManager : MonoBehaviour
     public void UpdateZombieKillCountDisplay()
     {
         GetComponentInChildren<ZombieCount>().UpdateCount();
+    }
+
+    public void ShowDialogWindow(string message, float length)
+    {
+        dialogText.text = message;
+        dialogText.enabled = true;
+        dialogStartTime = Time.time;
+        
+        Invoke("HideDialogWindow", length);
+    }
+
+    private void HideDialogWindow()
+    {
+        dialogText.enabled = false;
     }
 }
