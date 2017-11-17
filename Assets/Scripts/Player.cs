@@ -36,17 +36,17 @@ public class Player : MonoBehaviour
     {
         innerVoice = GetComponentInChildren<InnerVoice>();
         clearArea = GetComponentInChildren<ClearArea>();
-        Respawn();
+//        Respawn();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (lastRespawnToggle != respawn)
-        {
-            Respawn();
-            respawn = false;
-        }
+//        if (lastRespawnToggle != respawn)
+//        {
+//            Respawn();
+//            respawn = false;
+//        }
         
         if (GameManager.Instance.Helicopter.CurrentState == Helicopter.State.AWAIT && 
             clearArea.IsFoundClearArea && 

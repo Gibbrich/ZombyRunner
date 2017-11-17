@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4447308, g: 0.48832202, b: 0.54147685, a: 1}
+  m_IndirectSpecularColor: {r: 0.4447308, g: 0.48832172, b: 0.54147696, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -98,7 +98,7 @@ NavMeshSettings:
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
-    agentClimb: 0.4
+    agentClimb: 1
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
     minRegionArea: 2
@@ -814,7 +814,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4263099671063774, guid: 6101994970f0609418348c6cc26d2d0e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 210
+      value: 262.8
       objectReference: {fileID: 0}
     - target: {fileID: 4263099671063774, guid: 6101994970f0609418348c6cc26d2d0e, type: 2}
       propertyPath: m_LocalPosition.y
@@ -822,7 +822,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4263099671063774, guid: 6101994970f0609418348c6cc26d2d0e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 160
+      value: 221.8
       objectReference: {fileID: 0}
     - target: {fileID: 4263099671063774, guid: 6101994970f0609418348c6cc26d2d0e, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1549,7 +1549,19 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114649598678246850, guid: 40c187ff51adb5b44a837fc0a2429440,
+        type: 2}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 868860807}
+    - target: {fileID: 114371387688719374, guid: 40c187ff51adb5b44a837fc0a2429440,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1591962659}
+    m_RemovedComponents:
+    - {fileID: 114184437219020040, guid: 40c187ff51adb5b44a837fc0a2429440, type: 2}
+    - {fileID: 114649598678246850, guid: 40c187ff51adb5b44a837fc0a2429440, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 40c187ff51adb5b44a837fc0a2429440, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1489557492
@@ -1700,6 +1712,42 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1502510398}
+--- !u!1 &1502812378 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1242603363133274, guid: 40c187ff51adb5b44a837fc0a2429440,
+    type: 2}
+  m_PrefabInternal: {fileID: 1429514234}
+--- !u!114 &1502812379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1502812378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5335f0882fe4d478883cc8c58ce906, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 868860807}
+--- !u!114 &1502812380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1502812378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce7a80d520cacc042b5fe14f373d8173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MovingTurnSpeed: 360
+  m_StationaryTurnSpeed: 180
+  m_JumpPower: 6
+  m_GravityMultiplier: 2
+  m_RunCycleLegOffset: 0.2
+  m_MoveSpeedMultiplier: 1
+  m_AnimSpeedMultiplier: 1
+  m_GroundCheckDistance: 2
 --- !u!1001 &1580195831
 Prefab:
   m_ObjectHideFlags: 0
@@ -1742,6 +1790,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3e24a41b179d51949a5754a66377c732, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1591962659 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1931076786043470, guid: 6101994970f0609418348c6cc26d2d0e,
+    type: 2}
+  m_PrefabInternal: {fileID: 621148333}
 --- !u!1 &1598086400
 GameObject:
   m_ObjectHideFlags: 0
@@ -2540,20 +2593,6 @@ Light:
   m_Lightmapping: 4
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_FalloffTable:
-    m_Table[0]: 0
-    m_Table[1]: 0
-    m_Table[2]: 0
-    m_Table[3]: 0
-    m_Table[4]: 0
-    m_Table[5]: 0
-    m_Table[6]: 0
-    m_Table[7]: 0
-    m_Table[8]: 0
-    m_Table[9]: 0
-    m_Table[10]: 0
-    m_Table[11]: 0
-    m_Table[12]: 0
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_ShadowRadius: 0

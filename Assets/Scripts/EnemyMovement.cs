@@ -7,6 +7,8 @@ public class EnemyMovement : MonoBehaviour
     private ZombieHealth enemyHealth;
     private NavMeshAgent nav;
 
+    [SerializeField]
+    private GameObject player;
 
     void Awake()
     {
@@ -19,7 +21,7 @@ public class EnemyMovement : MonoBehaviour
     {
         if (enemyHealth.Health > 0 && GameManager.Instance.Player.Health > 0)
         {
-            nav.SetDestination(GameManager.Instance.Player.transform.position);
+            nav.SetDestination(player.transform.position);
         }
         else
         {
