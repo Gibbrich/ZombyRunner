@@ -23,11 +23,14 @@ public class ZombieHealth : MonoBehaviour
 
     private AudioSource audioSource;
     private ParticleSystem hitParticles;
+    private Animator animator;
 
     private bool isDead = false;
     // Use this for initialization
     void Start()
     {
+        animator = GetComponent<Animator>();
+        
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = hurtSFX;
 
@@ -61,16 +64,19 @@ public class ZombieHealth : MonoBehaviour
 
     private void Die()
     {
+        animator.SetTrigger(DIE_TRIGGER);
+        
         isDead = true;
         
         AudioSource.PlayClipAtPoint(deathSFX, transform.position);
 
-        Vector3 position = transform.position;
-        position.y += 1.5f;
-        GameManager.Instance.PlayZombieDeathExplosion(position);
+        GetComponent<ZombieAICharacterControl>().SetTarget(null);
+//        Vector3 position = transform.position;
+//        position.y += 1.5f;
+//        GameManager.Instance.PlayZombieDeathExplosion(position);
         GameManager.Instance.ZombieCount++;
         
-        Destroy(gameObject);
+        Destroy(gameObject, 1f);
     }
 
     private void PlayAudioSingleTime()
