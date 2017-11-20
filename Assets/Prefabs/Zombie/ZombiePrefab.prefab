@@ -83,7 +83,7 @@ GameObject:
   - component: {fileID: 4638521206039418}
   - component: {fileID: 135098901043223812}
   - component: {fileID: 114345060710520658}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: AggroRange
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -218,6 +218,22 @@ GameObject:
   - component: {fileID: 4718057461320200}
   m_Layer: 0
   m_Name: Bip01 R Thigh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1269587817346100
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4600114256430808}
+  - component: {fileID: 136118363726440216}
+  m_Layer: 8
+  m_Name: Health
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1108,7 +1124,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1242603363133274}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 252.15, y: 6.822, z: 194.59}
+  m_LocalPosition: {x: 256.46814, y: 4.5753193, z: 312.06528}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4666825694394028}
@@ -1131,6 +1147,7 @@ Transform:
   - {fileID: 4723459383360324}
   - {fileID: 4638521206039418}
   - {fileID: 4917014814963424}
+  - {fileID: 4600114256430808}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1257,6 +1274,19 @@ Transform:
   m_Father: {fileID: 4629453921562926}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 5.8238673, y: 168.36693, z: -2.4260693}
+--- !u!4 &4600114256430808
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1269587817346100}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4380368620599976}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4620715687753094
 Transform:
   m_ObjectHideFlags: 1
@@ -1583,7 +1613,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 2
 --- !u!82 &82439084272686962
 AudioSource:
   m_ObjectHideFlags: 1
@@ -1738,7 +1768,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da0b154174a53c7499ec4ea339a7322d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 4263099671063774, guid: 6101994970f0609418348c6cc26d2d0e, type: 2}
 --- !u!114 &114716732908044436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1782,6 +1812,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 15
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &136118363726440216
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1269587817346100}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.8
+  m_Height: 1.55
+  m_Direction: 1
+  m_Center: {x: 0, y: 1.07, z: 0}
 --- !u!136 &136963599090408170
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -2671,7 +2714,7 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 1.8
+  m_Height: 2
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
@@ -2734,7 +2777,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: -2081797640
+  randomSeed: 1131601631
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -5822,7 +5865,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: -1574130033
+  randomSeed: -1385392930
   InitialModule:
     serializedVersion: 3
     enabled: 1
@@ -12045,7 +12088,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 0
-  randomSeed: -1057323004
+  randomSeed: 336511682
   InitialModule:
     serializedVersion: 3
     enabled: 1

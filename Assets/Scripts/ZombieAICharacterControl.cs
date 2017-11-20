@@ -21,7 +21,7 @@ public class ZombieAICharacterControl : MonoBehaviour
     }
 
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (target != null)
         {

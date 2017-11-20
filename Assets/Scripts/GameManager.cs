@@ -38,6 +38,8 @@ public class GameManager : Singleton<GameManager>
         }
     }
 
+    public MusicManager MusicManager { get; private set; }
+
     // Use this for initialization
     void Start()
     {
@@ -45,6 +47,7 @@ public class GameManager : Singleton<GameManager>
         Helicopter = FindObjectOfType<Helicopter>();
         HealthDisplay = FindObjectOfType<HealthDisplay>();
         UIManager = FindObjectOfType<UIManager>();
+        MusicManager = FindObjectOfType<MusicManager>();
     }
 
     private void Update()

@@ -36,7 +36,7 @@ public class Player : MonoBehaviour
     {
         innerVoice = GetComponentInChildren<InnerVoice>();
         clearArea = GetComponentInChildren<ClearArea>();
-//        Respawn();
+        Respawn();
     }
 
     // Update is called once per frame
@@ -60,9 +60,8 @@ public class Player : MonoBehaviour
 
     private void Respawn()
     {
-        Transform[] spawnPoints = spawnPointsParent.GetComponentsInChildren<Transform>();
-        int id = Random.Range(0, spawnPoints.Length);
-        transform.position = spawnPoints[id].position;
+        int id = Random.Range(0, spawnPointsParent.transform.childCount);
+        transform.position = spawnPointsParent.transform.GetChild(id).position;
     }
     
     private void DropFlare()

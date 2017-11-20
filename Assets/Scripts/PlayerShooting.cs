@@ -7,7 +7,7 @@ public class PlayerShooting : MonoBehaviour
     [SerializeField]
     private float timeBetweenBullets = 0.15f;
     [SerializeField]
-    private float range = 1000f;
+    private float range = 200f;
 
 
     private float timer;
@@ -62,7 +62,7 @@ public class PlayerShooting : MonoBehaviour
 
         if (Physics.Raycast(shootRay, out shootHit, range, shootableMask))
         {
-            ZombieHealth zombieHealth = shootHit.collider.GetComponent<ZombieHealth>();
+            ZombieHealth zombieHealth = shootHit.collider.GetComponentInParent<ZombieHealth>();
             if (zombieHealth != null)
             {
                 zombieHealth.TakeDamage(damagePerShot, shootHit.point);

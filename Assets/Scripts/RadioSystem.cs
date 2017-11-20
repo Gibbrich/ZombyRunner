@@ -38,6 +38,7 @@ public class RadioSystem : MonoBehaviour
             GameManager.Instance.UIManager.ShowCurrentObjective();
             GameManager.Instance.Helicopter.CallHelicopter();
             GameManager.Instance.UIManager.StartHelicopterArriveCountdown();
+            GameManager.Instance.MusicManager.ShouldPlay = true;
         };
         
         PlayDialog(Dialog.Character.PILOT, heliCallReply, DialogText.ROGER_THAT, action);

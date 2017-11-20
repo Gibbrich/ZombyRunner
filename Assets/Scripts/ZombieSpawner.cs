@@ -52,7 +52,7 @@ public class ZombieSpawner : MonoBehaviour
         GameObject zombie = Instantiate(zombiePrefab, transform.position, Quaternion.identity);
         zombie.transform.parent = zombieParent.transform;
         
-        AICharacterControl control = zombie.GetComponent<AICharacterControl>();
+        ZombieAICharacterControl control = zombie.GetComponent<ZombieAICharacterControl>();
         control.target = GameManager.Instance.Player.transform;
 
         // set zombie speed
