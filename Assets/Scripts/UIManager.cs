@@ -22,13 +22,22 @@ public class UIManager : MonoBehaviour
     private Objective[] objectiveArray;
 
     private int currentObjective = 0;
-    
+
+    private Dialog dialog;
+    public Dialog Dialog
+    {
+        get { return dialog; }
+
+        private set { dialog = value; }
+    }
+
     // Use this for initialization
     void Start()
     {
         healthDisplay = GetComponentInChildren<HealthDisplay>();
         animator = GetComponent<Animator>();
         dialogText = GameObject.Find("DialogText").GetComponent<Text>();
+        dialog = GetComponentInChildren<Dialog>();
     }
     
     public void UpdateHealthDisplay(float value)
@@ -67,19 +76,6 @@ public class UIManager : MonoBehaviour
     public void UpdateZombieKillCountDisplay()
     {
         GetComponentInChildren<ZombieCount>().UpdateCount();
-    }
-
-    public void ShowDialogWindow(string message, float length)
-    {
-        dialogText.text = message;
-        dialogText.enabled = true;
-        
-        Invoke("HideDialogWindow", length);
-    }
-
-    private void HideDialogWindow()
-    {
-        dialogText.enabled = false;
     }
 
     public void ShowCurrentObjective()

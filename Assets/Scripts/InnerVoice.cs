@@ -53,7 +53,7 @@ public class InnerVoice : MonoBehaviour
         audioSource.clip = clip;
         audioSource.Play();
         
-        GameManager.Instance.UIManager.ShowDialogWindow(message, clip.length);
+        GameManager.Instance.UIManager.Dialog.ShowDialog(Dialog.Character.PLAYER, message, clip.length);
 
         if (postAction != null)
         {

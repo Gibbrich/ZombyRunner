@@ -28,7 +28,7 @@ public class RadioSystem : MonoBehaviour
     public void CallHelicopter()
     {
         Action action = () => Invoke("ReplyHelicopter", initialHeliCall.length + 1f);
-        PlayDialog(initialHeliCall, DialogText.EVACUATION_REQUIRE, action);
+        PlayDialog(Dialog.Character.PLAYER, initialHeliCall, DialogText.EVACUATION_REQUIRE, action);
     }
 
     private void ReplyHelicopter()
@@ -40,21 +40,21 @@ public class RadioSystem : MonoBehaviour
             GameManager.Instance.UIManager.StartHelicopterArriveCountdown();
         };
         
-        PlayDialog(heliCallReply, DialogText.ROGER_THAT, action);
+        PlayDialog(Dialog.Character.PILOT, heliCallReply, DialogText.ROGER_THAT, action);
     }
 
     public void PlayHelicopterInPosition()
     {
         Action action = () => Invoke("PlayHelicopterInPositionReply", heliInPosition.length + 1f);
-        PlayDialog(heliInPosition, DialogText.HELO_IN_POSITION, action);
+        PlayDialog(Dialog.Character.PILOT, heliInPosition, DialogText.HELO_IN_POSITION, action);
     }
 
-    public void PlayDialog(AudioClip clip, string message, Action postAction)
+    public void PlayDialog(Dialog.Character character, AudioClip clip, string message, Action postAction)
     {
         audioSource.clip = clip;
         audioSource.Play();
         
-        GameManager.Instance.UIManager.ShowDialogWindow(message, clip.length);
+        GameManager.Instance.UIManager.Dialog.ShowDialog(character, message, clip.length);
 
         if (postAction != null)
         {
@@ -64,6 +64,6 @@ public class RadioSystem : MonoBehaviour
 
     private void PlayHelicopterInPositionReply()
     {
-        PlayDialog(heliInPositionReply, DialogText.ITS_ABOUT_TIME, null);
+        PlayDialog(Dialog.Character.PLAYER, heliInPositionReply, DialogText.ITS_ABOUT_TIME, null);
     }
 }

@@ -134,6 +134,7 @@
           <e p="ClearArea.cs" t="Include" />
           <e p="Countdown.cs" t="Include" />
           <e p="DayCycle.cs" t="Include" />
+          <e p="Dialog.cs" t="Include" />
           <e p="DialogText.cs" t="Include" />
           <e p="EnemyMovement.cs" t="Include" />
           <e p="Eyes.cs" t="Include" />
