@@ -73,11 +73,6 @@ public class UIManager : MonoBehaviour
         GetComponentInChildren<Countdown>().StartCountdown();
     }
 
-    public void UpdateZombieKillCountDisplay()
-    {
-        GetComponentInChildren<ZombieCount>().UpdateCount();
-    }
-
     public void ShowCurrentObjective()
     {
         objectivesParent.GetComponent<Text>().enabled = true;

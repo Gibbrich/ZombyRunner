@@ -1,41 +1,67 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Gamelogic.Extensions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager>
 {
-    public Helicopter Helicopter { get; private set; }
+    private Helicopter helicopter;
+    public Helicopter Helicopter
+    {
+        get
+        {
+            if (!helicopter)
+            {
+                helicopter = FindObjectOfType<Helicopter>();
+            }
+            return helicopter;
+        }
+    }
 
-    public Player Player { get; private set; }
+    private Player player;
+    public Player Player
+    {
+        get
+        {
+            if (!player)
+            {
+                player = FindObjectOfType<Player>();
+            }
+            return player;
+        }
+    }
 
-    public HealthDisplay HealthDisplay { get; private set; }
-
-    public UIManager UIManager { get; private set; }
+    private UIManager uiManager;
+    public UIManager UIManager
+    {
+        get
+        {
+            if (!uiManager)
+            {
+                uiManager = FindObjectOfType<UIManager>();
+            }
+            return uiManager;
+        }
+    }
 
     private float mediumThreshold = 0.3f;
     private float hardTreshold = 0.7f;
 
-    private Difficulty currentDifficulty = Difficulty.EASY;
-    public Difficulty CurrentDifficulty
+    private GameDifficulty currentGameDifficulty = GameDifficulty.EASY;
+    public GameDifficulty CurrentGameDifficulty
     {
-        get { return currentDifficulty; }
-        set { currentDifficulty = value; }
+        get { return currentGameDifficulty; }
+        set { currentGameDifficulty = value; }
     }
     
     [SerializeField]
     private GameObject deathExplosionParticlesPrefab;
 
-    private int zombieCount;
-    public int ZombieCount
+    private ObservedValue<int> zombieCountObservable = new ObservedValue<int>(0);
+    public ObservedValue<int> ZombieCountObservable
     {
-        get { return zombieCount; }
-
-        set
-        {
-            zombieCount = value;
-            UIManager.UpdateZombieKillCountDisplay();
-        }
+        get { return zombieCountObservable; }
     }
 
     public MusicManager MusicManager { get; private set; }
@@ -43,10 +69,6 @@ public class GameManager : Singleton<GameManager>
     // Use this for initialization
     void Start()
     {
-        Player = FindObjectOfType<Player>();
-        Helicopter = FindObjectOfType<Helicopter>();
-        HealthDisplay = FindObjectOfType<HealthDisplay>();
-        UIManager = FindObjectOfType<UIManager>();
         MusicManager = FindObjectOfType<MusicManager>();
     }
 
@@ -58,15 +80,15 @@ public class GameManager : Singleton<GameManager>
 
             if (timeLeft <= mediumThreshold)
             {
-                CurrentDifficulty = Difficulty.EASY;
+                CurrentGameDifficulty = GameDifficulty.EASY;
             }
             else if (mediumThreshold < timeLeft && timeLeft <= hardTreshold)
             {
-                CurrentDifficulty = Difficulty.MEDIUM;
+                CurrentGameDifficulty = GameDifficulty.MEDIUM;
             }
             else
             {
-                CurrentDifficulty = Difficulty.HARD;
+                CurrentGameDifficulty = GameDifficulty.HARD;
             }
         }
         
@@ -77,26 +99,7 @@ public class GameManager : Singleton<GameManager>
         */        
     }
 
-    public void LoadLevel(string levelName)
-    {
-        SceneManager.LoadScene(levelName);
-    }
-
-    /* todo    - move to ZombieHealth script
-     * @author - Артур
-     * @date   - 09.11.2017
-     * @time   - 23:11
-    */
-    
-    public void PlayZombieDeathExplosion(Vector3 position)
-    {
-        GameObject explosion = Instantiate(deathExplosionParticlesPrefab, position, Quaternion.identity);
-        Destroy(explosion, 3f);
-    }
-    
-    
-    
-    public enum Difficulty
+    public enum GameDifficulty
     {
         EASY,
         MEDIUM,

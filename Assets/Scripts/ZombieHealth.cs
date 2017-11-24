@@ -74,7 +74,7 @@ public class ZombieHealth : MonoBehaviour
 //        Vector3 position = transform.position;
 //        position.y += 1.5f;
 //        GameManager.Instance.PlayZombieDeathExplosion(position);
-        GameManager.Instance.ZombieCount++;
+        GameManager.Instance.ZombieCountObservable.Value++;
         
         Destroy(gameObject, 1f);
     }

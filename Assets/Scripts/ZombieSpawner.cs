@@ -57,12 +57,12 @@ public class ZombieSpawner : MonoBehaviour
 
         // set zombie speed
         float speed;
-        GameManager.Difficulty currentDifficulty = GameManager.Instance.CurrentDifficulty;
-        if (currentDifficulty == GameManager.Difficulty.EASY)
+        GameManager.GameDifficulty currentGameDifficulty = GameManager.Instance.CurrentGameDifficulty;
+        if (currentGameDifficulty == GameManager.GameDifficulty.EASY)
         {
             speed = easyMovementSpeed;
         }
-        else if (currentDifficulty == GameManager.Difficulty.MEDIUM)
+        else if (currentGameDifficulty == GameManager.GameDifficulty.MEDIUM)
         {
             speed = mediumMovementSpeed;
         }
