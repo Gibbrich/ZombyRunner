@@ -11,17 +11,17 @@ public class ZombieCount : MonoBehaviour
     void Start()
     {
         text = GetComponentInChildren<Text>();
-        GameManager.Instance.ZombieCountObservable.OnValueChange += UpdateCount;
-        UpdateCount();
+        GameManager.Instance.ZombieCount.OnValueChange += UpdateCount;
+        UpdateCount(GameManager.Instance.ZombieCount.Value);
     }
 
-    public void UpdateCount()
+    public void UpdateCount(int value)
     {
-        text.text = GameManager.Instance.ZombieCountObservable.Value.ToString();        
+        text.text = value.ToString();        
     }
 
     private void OnDestroy()
     {
-        GameManager.Instance.ZombieCountObservable.OnValueChange -= UpdateCount;
+        GameManager.Instance.ZombieCount.OnValueChange -= UpdateCount;
     }
 }

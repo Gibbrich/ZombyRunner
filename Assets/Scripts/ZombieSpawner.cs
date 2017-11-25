@@ -1,77 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityStandardAssets.Characters.ThirdPerson;
 
 public class ZombieSpawner : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject zombiePrefab;
-
-    [SerializeField]
-    private GameObject zombieParent;
-
-    [SerializeField]
-    private float easyMovementSpeed = 0.5f;
-
-    [SerializeField]
-    private float mediumMovementSpeed = 0.7f;
-
-    [SerializeField]
-    private float hardMovementSpeed = 1f;
+    #region Editor tweakable fields
     
     [SerializeField]
+    [Tooltip("Minimum interval before next spawn")]
     private float spawnThresholdMin = 10f;
     
     [SerializeField]
+    [Tooltip("Maximum interval before next spawn")]
     private float spawnThresholdMax = 15f;
-
+    
+    #endregion
+    
+    #region Private fields
+    
     private float lastSpawnTime = 0;
     private float nextSpawnTime = 0;
     
-    // Use this for initialization
-    void Start()
-    {
-    }
-
+    #endregion
+    
+    #region Unity callbacks
+    
     // Update is called once per frame
     void Update()
     {
         if (GameManager.Instance.Helicopter.CurrentState != Helicopter.State.AWAIT 
             && Time.time - lastSpawnTime >= nextSpawnTime)
         {
-            Spawn();
+            ZombieManager.Instance.Create(transform.position);
             nextSpawnTime = Random.Range(spawnThresholdMin, spawnThresholdMax);
             lastSpawnTime = Time.time;
         }
     }
-
-    private void Spawn()
-    {
-        GameObject zombie = Instantiate(zombiePrefab, transform.position, Quaternion.identity);
-        zombie.transform.parent = zombieParent.transform;
-        
-        ZombieAICharacterControl control = zombie.GetComponent<ZombieAICharacterControl>();
-        control.target = GameManager.Instance.Player.transform;
-
-        // set zombie speed
-        float speed;
-        GameManager.GameDifficulty currentGameDifficulty = GameManager.Instance.CurrentGameDifficulty;
-        if (currentGameDifficulty == GameManager.GameDifficulty.EASY)
-        {
-            speed = easyMovementSpeed;
-        }
-        else if (currentGameDifficulty == GameManager.GameDifficulty.MEDIUM)
-        {
-            speed = mediumMovementSpeed;
-        }
-        else
-        {
-            speed = hardMovementSpeed;
-        }
-
-        NavMeshAgent agent = zombie.GetComponent<NavMeshAgent>();
-        agent.speed = speed;
-    }
+    
+    #endregion
 }

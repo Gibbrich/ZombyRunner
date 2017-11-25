@@ -1,11 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using DefaultNamespace;
 using Gamelogic.Extensions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class GameManager : Singleton<GameManager>
+public class GameManager : GlobalSingleton<GameManager>
 {
+    #region Properties
+
     private Helicopter helicopter;
     public Helicopter Helicopter
     {
@@ -44,7 +47,44 @@ public class GameManager : Singleton<GameManager>
             return uiManager;
         }
     }
+    
+    private ObservableValue<int> zombieCount;
+    public ObservableValue<int> ZombieCount
+    {
+        get
+        {
+            if (zombieCount == null)
+            {
+                zombieCount = new ObservableValue<int>(0);
+            }
+            return zombieCount;
+        }
+    }
 
+    private Clock clock;
+    public Clock Clock
+    {
+        get
+        {
+            if (clock == null)
+            {
+                clock = new Clock();
+                clock.Reset(arrivalTime);
+            }
+            return clock;
+        }
+    }
+    
+    #endregion
+
+    #region Editor tweakable fields
+
+    [SerializeField]
+    [Tooltip("Helicopter arrival time")]
+    private float arrivalTime = 300;
+
+    #endregion
+    
     private float mediumThreshold = 0.3f;
     private float hardTreshold = 0.7f;
 
@@ -54,17 +94,10 @@ public class GameManager : Singleton<GameManager>
         get { return currentGameDifficulty; }
         set { currentGameDifficulty = value; }
     }
-    
-    [SerializeField]
-    private GameObject deathExplosionParticlesPrefab;
-
-    private ObservedValue<int> zombieCountObservable = new ObservedValue<int>(0);
-    public ObservedValue<int> ZombieCountObservable
-    {
-        get { return zombieCountObservable; }
-    }
 
     public MusicManager MusicManager { get; private set; }
+
+    #region Unity callbacks
 
     // Use this for initialization
     void Start()
@@ -74,6 +107,7 @@ public class GameManager : Singleton<GameManager>
 
     private void Update()
     {
+        clock.Update(Time.deltaTime);
         if (Helicopter.CalledTime != -1)
         {
             float timeLeft = Helicopter.CalledTime / Helicopter.ArrivalTime;
@@ -97,6 +131,16 @@ public class GameManager : Singleton<GameManager>
          * @date   - 10.11.2017
          * @time   - 12:07
         */        
+    }
+
+    #endregion
+
+    public void StartHelicopterArrivalCountdown()
+    {
+        if (clock.IsPaused && !clock.IsDone)
+        {
+            clock.Unpause();
+        }
     }
 
     public enum GameDifficulty

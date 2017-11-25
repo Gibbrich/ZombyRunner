@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class LevelManager : Singleton<LevelManager>
+public class LevelManager : GlobalSingleton<LevelManager>
 {
     // Use this for initialization
     void Start()

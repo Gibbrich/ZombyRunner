@@ -68,11 +68,6 @@ public class UIManager : MonoBehaviour
         animator.SetBool(IS_CALL_HELO_AVAILABLE, isAreaClear);
     }
 
-    public void StartHelicopterArriveCountdown()
-    {
-        GetComponentInChildren<Countdown>().StartCountdown();
-    }
-
     public void ShowCurrentObjective()
     {
         objectivesParent.GetComponent<Text>().enabled = true;
